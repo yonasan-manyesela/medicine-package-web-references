@@ -1,0 +1,58 @@
+item_id,query_id,rank,drug,stratum,seed
+fresh_oct|Q002|3,Q002,3,D-Artepp,random,1
+fresh_oct|Q003|3,Q003,3,ARTEQUICK,candidate,1
+fresh_oct|Q005|1,Q005,1,Clamoxyl,random,1
+fresh_oct|Q005|3,Q005,3,Clamoxyl,candidate,1
+fresh_oct|Q007|3,Q007,3,Cipronat,random,1
+fresh_oct|Q012|1,Q012,1,CLAXITODIN,candidate,1
+fresh_oct|Q013|1,Q013,1,Ciprofit 500,random,1
+fresh_oct|Q013|3,Q013,3,Ciprofit 500,candidate,1
+fresh_oct|Q017|1,Q017,1,Healmoxy Capsules 500 mg,candidate,1
+fresh_oct|Q017|2,Q017,2,Healmoxy Capsules 500 mg,candidate,1
+fresh_oct|Q017|3,Q017,3,Healmoxy Capsules 500 mg,candidate,1
+fresh_oct|Q018|1,Q018,1,Moxacil 250,random,1
+fresh_oct|Q020|1,Q020,1,Cetal sinus,candidate,1
+fresh_oct|Q021|2,Q021,2,adol,random,1
+fresh_oct|Q025|1,Q025,1,daflon 500 mg,random,1
+fresh_oct|Q027|2,Q027,2,Brufen,random,1
+fresh_oct|Q028|2,Q028,2,Bivatracin,random,1
+fresh_oct|Q032|3,Q032,3,Artefan Dispersible,random,1
+fresh_oct|Q034|3,Q034,3,Ascard-75,candidate,1
+fresh_oct|Q035|3,Q035,3,Aspirin cardio,candidate,1
+fresh_oct|Q038|3,Q038,3,Curam 625,random,1
+fresh_oct|Q040|1,Q040,1,Gramocef-O 400,random,1
+fresh_oct|Q045|2,Q045,2,Lumartem,random,1
+fresh_oct|Q046|1,Q046,1,Lumerax DT 20/120,candidate,1
+fresh_oct|Q046|2,Q046,2,Lumerax DT 20/120,candidate,1
+fresh_oct|Q049|1,Q049,1,Metformin Denk 500,random,1
+fresh_oct|Q050|2,Q050,2,Nebilong-H,random,1
+fresh_oct|Q050|3,Q050,3,Nebilong-H,random,1
+fresh_oct|Q052|3,Q052,3,Nexium,random,1
+fresh_oct|Q053|1,Q053,1,Nifedi-Denk 20 Retard,random,1
+fresh_oct|Q055|3,Q055,3,SPASMOMEN,random,1
+fresh_oct|Q058|2,Q058,2,UTROGESTAN,random,1
+fresh_oct|Q060|3,Q060,3,Zoladex LA 10.8 mg,random,1
+fresh_oct|Q064|3,Q064,3,VISCERALGINE,random,1
+fresh_oct|Q065|1,Q065,1,Streptoquin,candidate,1
+fresh_oct|Q065|2,Q065,2,Streptoquin,candidate,1
+fresh_oct|Q068|1,Q068,1,paramol,candidate,1
+fresh_oct|Q068|2,Q068,2,paramol,candidate,1
+fresh_oct|Q069|1,Q069,1,Neurovit,random,1
+fresh_oct|Q070|2,Q070,2,Megamox,candidate,1
+fresh_oct|Q071|1,Q071,1,JUSPRIN 81mg,candidate,1
+fresh_oct|Q071|3,Q071,3,JUSPRIN 81mg,candidate,1
+fresh_oct|Q072|3,Q072,3,Ivypront,candidate,1
+fresh_oct|Q073|1,Q073,1,Gabalepsy,candidate,1
+fresh_oct|Q073|3,Q073,3,Gabalepsy,random,1
+fresh_oct|Q074|3,Q074,3,FLOXABACT,random,1
+fresh_oct|Q076|1,Q076,1,Diclac 75 ID,candidate,1
+fresh_oct|Q077|3,Q077,3,CIPROFAR 500 mg,candidate,1
+fresh_oct|Q078|2,Q078,2,Ciprodiazole,candidate,1
+fresh_oct|Q079|2,Q079,2,CEMICRESTO,random,1
+fresh_oct|Q081|3,Q081,3,Aggrex,candidate,1
+fresh_oct|Q086|1,Q086,1,Prinorelax,candidate,1
+fresh_oct|Q088|3,Q088,3,Mucophylline,random,1
+fresh_oct|Q090|2,Q090,2,HISTAZINE-1,random,1
+fresh_oct|Q090|3,Q090,3,HISTAZINE-1,random,1
+fresh_oct|Q092|2,Q092,2,EZAMOL-C,candidate,1
+fresh_oct|Q095|3,Q095,3,Avosoya 300 mg,candidate,1

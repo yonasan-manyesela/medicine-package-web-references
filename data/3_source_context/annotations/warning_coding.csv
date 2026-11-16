@@ -1,0 +1,64 @@
+item_id,annotator,quote,category
+fresh_oct|Q017|2,FirstAuthor,four fake batches of amoxicillin capsules manufactured by Maxheal Pharmaceutical India Limited are circulating in some countries,quality_regulatory
+fresh_oct|Q071|3,FirstAuthor,the Ministry of Health and Prevention (MoHAP) in Dubai announced the withdrawal of Jusprin 81 mg tablets for failing to comply with the required regulatory standards.,quality_regulatory
+fresh_oct|Q012|1,FirstAuthor,NAFDAC Warns Against Fake Oxytocin Drugs,quality_regulatory
+fresh_oct|Q017|3,FirstAuthor,Nigeria’s drug regulator shared a World Health Organization alert about counterfeit amoxicillin circulating in central Africa.,quality_regulatory
+fresh_oct|Q017|3,FirstAuthor,NAFDAC warned about fake antibiotics in central Africa.,quality_regulatory
+fresh_oct|Q017|3,FirstAuthor,counterfeit cancer medicine into the U.S.,quality_regulatory
+fresh_oct|Q017|1,FirstAuthor,MFDA warns about fake amoxicillin batches,quality_regulatory
+fresh_oct|Q017|1,PH01,MFDA warns about fake ,quality_regulatory
+fresh_oct|Q068|1,PH01,Keep out of reach of childrenDo not exceed the recommended dose.,clinical_caution
+fresh_oct|Q090|3,PH01,Keep out of reach of children. Refer to label for product-specific conditions.,clinical_caution
+fresh_oct|Q086|1,PH01,Keep Out of Reach of ChildrenAvoid alcohol and CNS depressantsDo not use with MAOIs or in serious heart diseaseMay cause drowsinessUse under medical supervision,clinical_caution
+fresh_oct|Q078|2,PH01,Not for use under 16 to 18 years of age,clinical_caution
+fresh_oct|Q078|2,PH01, — ciprofloxacin increases sensitivity to sunlight and can cause an exaggerated ,clinical_caution
+fresh_oct|Q078|2,PH01,It may cause dizziness or affect concentration,clinical_caution
+fresh_oct|Q007|3,PH01,Contactez votre médecin,clinical_caution
+fresh_oct|Q071|3,PH01,Announcement: UAE withdraws low-dose aspirin from shelves,quality_regulatory
+fresh_oct|Q046|2,PH01," Keep all medicines out of the reach of children and away from pets, never share your medicines with others, and use this medication only for the indication prescribed.",clinical_caution
+fresh_oct|Q003|3,PH01,"Use only under medical supervision. Complete the full dose even if you feel better. Possible side effects include nausea, vomiting, dizziness, and abdominal pain. ",clinical_caution
+fresh_oct|Q003|3,PH01,"se with caution if you have heart conditions (QT prolongation), liver or kidney problems, or if you’re taking other medications. 
+Pregnant or breastfeeding women should consult a doctor before use. Not recommended for very small children unless prescribed.",clinical_caution
+fresh_oct|Q072|3,PH01,Keep Out of Reach of ChildrenAvoid use in allergy to nitazoxanideConsult Doctor If Symptoms Persist Or WorsenDo not exceed recommended do,clinical_caution
+fresh_oct|Q071|1,PH01,"should not be taken by people who are allergic to ibuprofen or naproxen, or who have salicylate intolerance or a more generalized drug intolerance to NSAIDs, and caution should be exercised",clinical_caution
+fresh_oct|Q068|2,PH01,Children under 12 years old should consult a doctor before administration.,clinical_caution
+fresh_oct|Q076|1,PH01,Do not take it if it is not necessary. Occasional use for a genuine indication is a different proposition from taking it routinely out of habit.,clinical_caution
+fresh_oct|Q060|3,PH01, It can have potentially dangerous negative effects ,clinical_caution
+fresh_oct|Q073|1,PH01,aking care not to stop taking it suddenly to avoid a recurrence of symptoms or unwanted complications,clinical_caution
+fresh_oct|Q079|2,PH01,Pregnant ,clinical_caution
+fresh_oct|Q079|2,PH01,"Patients should be counseled to adhere to a heart-healthy diet and lifestyle changes while on cemicresto. Regular monitoring of lipid levels is recommended to assess the effectiveness of therapy. It is essential to inform healthcare providers of any new symptoms or side effects experienced during treatment, especially muscle pain. Pregnant or breastfeeding women should not use cemicresto, and any potential drug interactions should be discussed with a healthcare provider.
+									 
+								
+
+								",clinical_caution
+fresh_oct|Q065|1,PH01,"Blood or mucus in the stool, high fever, signs of dehydration, severe abdominal pain, diarrhoea beyond 3 days in an adult or 24 hours in a young child, or diarrhoea in an infant, an elderly person or anyone with a chronic illness.",clinical_caution
+fresh_oct|Q035|3,PH01," if you are allergic to acetylsalicylic acid, other salicylates or any of the other ingredients of this medicine; – if you have a history of asthma with salicylates or other medicines that have a similar effec",clinical_caution
+fresh_oct|Q035|3,PH01, if you have severe kidney problems;,clinical_caution
+fresh_oct|Q035|3,PH01," if you have an acute ulcer of the stomach or duodenum; – if you have haemorrhagic diathesis (a disease characterized by frequent bruising, bleeding from the nose and gums, prolonged bleeding from superficial wounds); – if you have severe kidney problems; – if you have severe liver problems; – if you have severe heart failure; – if you are taking methotrexate 15 mg or more a week (methotrexate is a medicine used to treat various types of cancer, rheumatoid arthritis and other autoimmune diseases); – if you are in the last trimester of pregnancy.
+Aspirin Cardio can provoke a gout attack.",clinical_caution
+fresh_oct|Q005|3,PH01,"l if: You are allergic to amoxicillin, penicillin, or other ingredients of this medicine; you have previously had an allergic reaction to antibiotics; you have severe kidney problems. Possible side effects: The most common side effects are: Gastrointestinal complaints such as nausea and diarrhea",clinical_caution
+fresh_oct|Q005|3,PH01,Skin rash. Headache. Dizziness. Properties Clamoxyl is a broad-spectrum antibiotic that is effective against many bacteria. It belongs to the group of penicillin antibiotics. It works by breaking down the cell wall of bacteria. ,clinical_caution
+fresh_oct|Q034|3,PH01,"Not recommended for children unless prescribed by a doctor, especially due to the risk of Reye’s syndrome",clinical_caution
+fresh_oct|Q034|3,PH01,Have liver or kidney diseaseHave uncontrolled high blood pressureAre pregnant or breastfeedingAre taking other NSAIDs or steroidsHave gout or stomach problemsAlso remember:This medicine may increase bleeding riskStop before any surgery if advised by your doctor,clinical_caution
+fresh_oct|Q034|3,PH01,Avoid alcohol while taking this medicine,clinical_caution
+fresh_oct|Q092|2,PH01,Avoid ,clinical_caution
+fresh_oct|Q092|2,PH01, with severe liver diseaseConsult Doctor if Pregnant or BreastfeedingDo Not Combine With Other Paracetamol ProductsDo not exceed recommended doseUse cautiously in hypertension and heart disease,clinical_caution
+fresh_oct|Q070|2,PH01,Penicillin allergy,clinical_caution
+fresh_oct|Q070|2,PH01,Diarrhoea,clinical_caution
+fresh_oct|Q070|2,PH01,Liver. ,clinical_caution
+fresh_oct|Q070|2,PH01,Kidney impairment requires a dose adjustment ,clinical_caution
+fresh_oct|Q070|2,PH01,Glandular fever. Amoxicillin commonly causes a widespread rash in infectious mononucleosis and is avoided when it is suspected. ,clinical_caution
+fresh_oct|Q070|2,PH01,Interactions,clinical_caution
+fresh_oct|Q070|2,PH01,"Not for viral illness. Colds, flu and most sore throats are viral; antibiotics do nothing for them and add side effects and resistance for no benefit. ",clinical_caution
+fresh_oct|Q070|2,PH01,Thrush can follow a course as normal flora is disturbed,clinical_caution
+fresh_oct|Q046|1,PH01,Complete the full course,clinical_caution
+fresh_oct|Q046|1,PH01,Check the packaging,clinical_caution
+fresh_oct|Q046|1,PH01,Use only for treatment,clinical_caution
+fresh_oct|Q046|1,PH01,Be careful when driving,clinical_caution
+fresh_oct|Q046|1,PH01,Watch for heart symptoms,clinical_caution
+fresh_oct|Q012|1,PH01,Check your sources,quality_regulatory
+fresh_oct|Q012|1,PH01,Report suspicious sales:,quality_regulatory
+fresh_oct|Q012|1,PH01,be vigilant,quality_regulatory
+fresh_oct|Q012|1,PH01, it’s a threat. NAFDAC’s latest crackdown is both a bureaucratic move and a reminder that fake drugs remain a danger in Nigeria’s healthcare system.,quality_regulatory
+fresh_oct|Q012|1,PH01,That’s why NAFDAC’s discovery is so alarming,quality_regulatory
+fresh_oct|Q045|2,PH01,Refrain from taking any other medicines or antacids along with this medicine (unless advised by the doctor) as they may affect the absorption of this medicine. Do not use this medicine for treating any other condition without consulting your doctor.SIDE EFFECTS OF LUMARTEM TABLETMost side effects do not require any medical attention and disappear as your body adjusts to the medicine. Consult your doctor if they persist or if you're worried about themCommon side effects of,clinical_caution

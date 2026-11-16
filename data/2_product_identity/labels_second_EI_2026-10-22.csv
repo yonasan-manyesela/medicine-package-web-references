@@ -1,0 +1,110 @@
+﻿# Reference image labelling - product identity annotations,,,,,,,,,,,,,,,
+# annotator = EI,,,,,,,,,,,,,,,
+# mode = independent second annotator (fixed subset),,,,,,,,,,,,,,,
+# guide_version = v7   build_id = 2bf890b296f6,,,,,,,,,,,,,,,
+# items_in_page = 100   items_labelled = 100,,,,,,,,,,,,,,,
+# exported_at_utc = 2026-10-22T04:12:50.472Z,,,,,,,,,,,,,,,
+# label: same | variant | brand_only | different | unclear ; primary_label folds brand_only+unclear into cannot_determine,,,,,,,,,,,,,,,
+# flags: packaging_differs (M) / part_of_larger_image (C) / watermark_or_overlay (W) ; 1 = set,,,,,,,,,,,,,,,
+# NOTE labels describe which product the web image shows - not whether any package is genuine.,,,,,,,,,,,,,,,
+annotator,item_id,query_id,brand,strength_form,product_attributes,label,primary_label,packaging_differs,part_of_larger_image,watermark_or_overlay,note,seconds,labelled_at,guide_version,build_id
+EI,Q001_302f32855bccf80f,Q001,same,same,same,same,same,0,1,0,two languages in left side and three languages in right side for active ingredient(s),739,2026-10-22T01:50:41.034Z,v7,2bf890b296f6
+EI,Q002_01631ff59730e60d,Q002,same,same,same,same,same,0,0,0,,4622,2026-10-22T01:50:43.995Z,v7,2bf890b296f6
+EI,Q004_7c91d6f007ea429c,Q004,different,,,different,different,0,0,0,,46,2026-10-22T01:51:04.792Z,v7,2bf890b296f6
+EI,Q004_e6e4eaa84d79bce4,Q004,same,different,different,variant,variant,0,0,0,logo is different,244,2026-10-22T01:52:49.294Z,v7,2bf890b296f6
+EI,Q004_0811a3756f98d673,Q004,same,same,same,same,same,1,0,0,logo is different,52,2026-10-22T01:53:41.677Z,v7,2bf890b296f6
+EI,Q004_5d735090cb057433,Q004,same,different,different,variant,variant,0,0,0,,41,2026-10-22T01:54:23.134Z,v7,2bf890b296f6
+EI,Q005_af63108c4ca60c38,Q005,different,,,different,different,0,0,0,,53,2026-10-22T01:55:15.905Z,v7,2bf890b296f6
+EI,Q005_85bd6e1324e297ce,Q005,different,,,different,different,0,0,0,,5,2026-10-22T01:55:21.204Z,v7,2bf890b296f6
+EI,Q006_1bbb1e153d157e4f,Q006,different,,,different,different,0,0,0,,16,2026-10-22T01:55:37.296Z,v7,2bf890b296f6
+EI,Q010_53231bbe6d04c236,Q010,different,,,different,different,0,0,0,,7,2026-10-22T01:55:44.016Z,v7,2bf890b296f6
+EI,Q011_e67425bd09adba09,Q011,different,,,different,different,0,0,0,,32,2026-10-22T01:56:15.734Z,v7,2bf890b296f6
+EI,Q012_9036791a5fa944dc,Q012,different,,,different,different,0,0,0,,6,2026-10-22T01:56:21.406Z,v7,2bf890b296f6
+EI,Q015_d178874b90957d46,Q015,unreadable,,,unclear,cannot_determine,0,0,0,,94,2026-10-22T01:57:55.468Z,v7,2bf890b296f6
+EI,Q016_e2b6b5c004278f40,Q016,same,different,different,variant,variant,0,0,1,,71,2026-10-22T01:59:06.416Z,v7,2bf890b296f6
+EI,Q016_403087b3de25d0e2,Q016,different,,,different,different,0,0,0,,6,2026-10-22T01:59:11.984Z,v7,2bf890b296f6
+EI,Q018_348dc21e35b8eaa6,Q018,different,,,different,different,0,0,0,,7,2026-10-22T01:59:18.671Z,v7,2bf890b296f6
+EI,Q018_f54f2f21a93bad3a,Q018,same,different,different,variant,variant,0,0,0,,126,2026-10-22T02:01:24.508Z,v7,2bf890b296f6
+EI,Q018_af053c3c756fd277,Q018,same,same,same,same,same,0,0,1,,55,2026-10-22T02:02:19.900Z,v7,2bf890b296f6
+EI,Q020_e6aa736e30c4cacd,Q020,same,same,same,same,same,1,0,0,Colour of active ingredients are different,174,2026-10-22T02:05:13.669Z,v7,2bf890b296f6
+EI,Q025_ba90e328a3fabd91,Q025,unreadable,,,unclear,cannot_determine,0,0,0,,65,2026-10-22T02:06:18.560Z,v7,2bf890b296f6
+EI,Q026_4b19389efcf573d3,Q026,unreadable,,,unclear,cannot_determine,0,0,0,,46,2026-10-22T02:07:04.902Z,v7,2bf890b296f6
+EI,Q027_ce2994eb3287c99a,Q027,same,different,different,variant,variant,0,0,0,,47,2026-10-22T02:07:52.325Z,v7,2bf890b296f6
+EI,Q029_91f1bb5601efc822,Q029,same,different,different,variant,variant,0,0,0,,55,2026-10-22T02:08:47.091Z,v7,2bf890b296f6
+EI,Q030_f99aa9890a633157,Q030,same,different,different,variant,variant,0,0,0,,19,2026-10-22T02:09:06.023Z,v7,2bf890b296f6
+EI,Q030_1f3f48d43aa82811,Q030,same,same,same,same,same,1,0,0,"Medicine name ""Amlozaar"" in left side is bigger and wider than that of right side.",181,2026-10-22T02:12:07.468Z,v7,2bf890b296f6
+EI,Q030_129ed76508007aec,Q030,same,same,same,same,same,0,0,0,,47,2026-10-22T02:12:54.283Z,v7,2bf890b296f6
+EI,Q031_3086c2e9249dc1ff,Q031,different,,,different,different,0,0,0,,6,2026-10-22T02:13:00.549Z,v7,2bf890b296f6
+EI,Q032_ee403fdda76f7bfe,Q032,same,different,different,variant,variant,0,0,0,,35,2026-10-22T02:13:35.997Z,v7,2bf890b296f6
+EI,Q032_7a6f4c7605c1ce1c,Q032,different,,,different,different,0,0,0,,7,2026-10-22T02:13:43.433Z,v7,2bf890b296f6
+EI,Q033_aa8e13e8f2362a98,Q033,same,same,same,same,same,1,0,0,different language,122,2026-10-22T02:15:45.103Z,v7,2bf890b296f6
+EI,Q035_fefb81e767d482d7,Q035,same,different,different,variant,variant,0,0,0,,29,2026-10-22T02:16:13.629Z,v7,2bf890b296f6
+EI,Q036_51228481ef46bf41,Q036,same,different,different,variant,variant,0,0,0,,18,2026-10-22T02:16:31.463Z,v7,2bf890b296f6
+EI,Q038_56454d52802f7937,Q038,same,different,different,variant,variant,0,0,0,,17,2026-10-22T02:16:48.326Z,v7,2bf890b296f6
+EI,Q039_1be0e8302f23186e,Q039,same,same,same,same,same,1,0,0,,60,2026-10-22T02:17:48.269Z,v7,2bf890b296f6
+EI,Q039_4f9f067c6b5c370f,Q039,different,,,different,different,0,0,0,,12,2026-10-22T02:17:59.824Z,v7,2bf890b296f6
+EI,Q040_c30c7cc81e26425d,Q040,same,different,different,variant,variant,0,0,0,,47,2026-10-22T02:18:47.063Z,v7,2bf890b296f6
+EI,Q042_cfeeb843fb70396c,Q042,different,,,different,different,0,0,0,,4,2026-10-22T02:18:51.526Z,v7,2bf890b296f6
+EI,Q043_b53514d3ae616a0a,Q043,same,same,same,same,same,1,0,0,,53,2026-10-22T02:19:44.887Z,v7,2bf890b296f6
+EI,Q046_356614c1eef86884,Q046,same,different,different,variant,variant,0,0,0,,74,2026-10-22T02:20:58.662Z,v7,2bf890b296f6
+EI,Q047_32489b8b9c01552f,Q047,same,same,same,same,same,1,0,0,position of logo is different,74,2026-10-22T02:22:13.137Z,v7,2bf890b296f6
+EI,Q050_a18a67ce0a878ab9,Q050,same,different,different,variant,variant,0,0,0,,24,2026-10-22T02:22:36.914Z,v7,2bf890b296f6
+EI,Q050_6cd5055d51c494ce,Q050,same,same,same,same,same,0,1,0,,385,2026-10-22T02:29:01.879Z,v7,2bf890b296f6
+EI,Q051_e6bfd2c580ab7359,Q051,unreadable,,,unclear,cannot_determine,0,0,0,,63,2026-10-22T02:30:04.696Z,v7,2bf890b296f6
+EI,Q052_d7bda6f9643855f8,Q052,same,different,different,variant,variant,0,0,0,,40,2026-10-22T02:30:44.748Z,v7,2bf890b296f6
+EI,Q052_1105273a3873b5e9,Q052,same,same,same,same,same,0,0,0,,48,2026-10-22T02:31:32.438Z,v7,2bf890b296f6
+EI,Q053_222a030710e34115,Q053,same,same,same,same,same,0,0,1,,72,2026-10-22T02:32:44.709Z,v7,2bf890b296f6
+EI,Q055_c3b585088051d4b8,Q055,same,different,different,variant,variant,0,0,0,,103,2026-10-22T02:34:27.654Z,v7,2bf890b296f6
+EI,Q056_5301fce55ebfa43d,Q056,different,,,different,different,0,0,0,,9,2026-10-22T02:34:36.992Z,v7,2bf890b296f6
+EI,Q057_5c7eb95448948b19,Q057,same,same,same,same,same,1,0,0,"Colour of logo, language difference",108,2026-10-22T02:36:24.606Z,v7,2bf890b296f6
+EI,Q058_3eda31d7f6a36d88,Q058,different,,,different,different,0,0,0,,10,2026-10-22T02:36:34.304Z,v7,2bf890b296f6
+EI,Q058_e3df878f0b5efad1,Q058,same,different,different,variant,variant,0,0,0,,18,2026-10-22T02:36:52.457Z,v7,2bf890b296f6
+EI,Q059_f70acce5673cb62e,Q059,different,,,different,different,0,0,0,,18,2026-10-22T02:37:10.820Z,v7,2bf890b296f6
+EI,Q060_6efb3cdd199a1c1d,Q060,same,same,same,same,same,1,0,0,,119,2026-10-22T02:39:10.039Z,v7,2bf890b296f6
+EI,Q061_9a352deda0217e91,Q061,different,,,different,different,0,0,0,,3,2026-10-22T02:39:13.538Z,v7,2bf890b296f6
+EI,Q063_225cefbbbe83e659,Q063,different,,,different,different,0,0,0,,29,2026-10-22T02:39:42.304Z,v7,2bf890b296f6
+EI,Q064_e38adeb661586b0e,Q064,same,same,same,same,same,0,0,1,,121,2026-10-22T02:41:43.313Z,v7,2bf890b296f6
+EI,Q064_56d9e6eb627a2c0d,Q064,same,different,different,variant,variant,0,0,0,,21,2026-10-22T02:42:04.772Z,v7,2bf890b296f6
+EI,Q065_df2a01dfedeef3fa,Q065,same,different,different,variant,variant,0,0,0,,38,2026-10-22T02:42:42.452Z,v7,2bf890b296f6
+EI,Q066_b0af76fdbe8e4c63,Q066,same,same,same,same,same,0,0,0,,74,2026-10-22T02:44:04.532Z,v7,2bf890b296f6
+EI,Q067_87bc9b6294a042ce,Q067,different,,,different,different,0,0,0,,5,2026-10-22T02:44:09.319Z,v7,2bf890b296f6
+EI,Q068_7a425eeb9325150c,Q068,different,,,different,different,0,0,0,,13,2026-10-22T02:44:22.459Z,v7,2bf890b296f6
+EI,Q068_998fb286fb39cf07,Q068,different,,,different,different,0,0,0,,7,2026-10-22T02:44:29.787Z,v7,2bf890b296f6
+EI,Q069_d5e8fc7ffc0a9299,Q069,different,,,different,different,0,0,0,,45,2026-10-22T02:45:14.990Z,v7,2bf890b296f6
+EI,Q070_a16f2234082c07c2,Q070,same,different,different,variant,variant,0,0,0,,25,2026-10-22T02:45:39.877Z,v7,2bf890b296f6
+EI,Q070_8ade92eb4994a918,Q070,same,different,different,variant,variant,0,0,0,,40,2026-10-22T02:46:20.213Z,v7,2bf890b296f6
+EI,Q070_72a9b5203837bb1b,Q070,different,,,different,different,0,0,0,,9,2026-10-22T02:46:29.631Z,v7,2bf890b296f6
+EI,Q070_49de7fd4f05abed4,Q070,same,different,different,variant,variant,0,0,0,,10,2026-10-22T02:46:39.132Z,v7,2bf890b296f6
+EI,Q071_1c244e7309b3b3d3,Q071,same,same,same,same,same,1,0,0,,51,2026-10-22T02:47:30.172Z,v7,2bf890b296f6
+EI,Q073_24902b76d9024466,Q073,different,,,different,different,0,0,0,,42,2026-10-22T02:48:12.239Z,v7,2bf890b296f6
+EI,Q074_4fa020a588a82052,Q074,same,different,different,variant,variant,0,0,0,,29,2026-10-22T02:48:41.352Z,v7,2bf890b296f6
+EI,Q075_cfbd9174ddc15446,Q075,different,,,different,different,0,0,0,,32,2026-10-22T02:49:13.847Z,v7,2bf890b296f6
+EI,Q076_7338f7ef01b44085,Q076,same,same,same,same,same,1,0,0,,61,2026-10-22T02:50:14.357Z,v7,2bf890b296f6
+EI,Q076_66495affd06747f9,Q076,same,same,same,same,same,1,0,0,,52,2026-10-22T02:51:06.642Z,v7,2bf890b296f6
+EI,Q077_5f07d3f8c57e8370,Q077,same,same,same,same,same,1,0,0,,43,2026-10-22T02:51:49.642Z,v7,2bf890b296f6
+EI,Q077_813a6a2873c2e4f7,Q077,different,,,different,different,0,0,0,,14,2026-10-22T02:52:03.348Z,v7,2bf890b296f6
+EI,Q078_ae026b29a648ad6f,Q078,same,same,same,same,same,0,0,0,,58,2026-10-22T02:53:01.402Z,v7,2bf890b296f6
+EI,Q081_952f443f921cad46,Q081,different,,,different,different,0,0,0,,8,2026-10-22T02:53:09.424Z,v7,2bf890b296f6
+EI,Q081_dfa464c4731dfb0a,Q081,same,same,same,same,same,1,0,0,different language,65,2026-10-22T02:54:14.804Z,v7,2bf890b296f6
+EI,Q082_6d71a3d898ec9535,Q082,same,same,same,same,same,1,0,0,,116,2026-10-22T02:56:11.163Z,v7,2bf890b296f6
+EI,Q082_6ef0db093af945b9,Q082,same,same,same,same,same,1,0,1,,37,2026-10-22T02:56:48.284Z,v7,2bf890b296f6
+EI,Q082_c7d15e82c7e13c5b,Q082,different,,,different,different,0,0,0,,4,2026-10-22T02:56:52.081Z,v7,2bf890b296f6
+EI,Q084_76d1a59f98815b3b,Q084,same,different,different,variant,variant,0,0,0,,73,2026-10-22T02:58:05.243Z,v7,2bf890b296f6
+EI,Q088_956d6c99770e089f,Q088,same,same,same,same,same,0,0,0,,29,2026-10-22T02:58:34.703Z,v7,2bf890b296f6
+EI,Q088_c854549d4871f69f,Q088,different,,,different,different,0,0,0,,5,2026-10-22T02:58:39.831Z,v7,2bf890b296f6
+EI,Q089_6b938f892b382233,Q089,same,different,different,variant,variant,0,0,0,,45,2026-10-22T02:59:24.668Z,v7,2bf890b296f6
+EI,Q090_b61e35f5fcdc35a9,Q090,same,same,same,same,same,0,0,0,,35,2026-10-22T02:59:59.503Z,v7,2bf890b296f6
+EI,Q090_f1eb76793fc3c10c,Q090,same,same,same,same,same,0,0,0,another package is included on right side,54,2026-10-22T03:00:53.363Z,v7,2bf890b296f6
+EI,Q092_b442ef988dcd5ca3,Q092,different,,,different,different,0,0,0,,44,2026-10-22T03:01:36.878Z,v7,2bf890b296f6
+EI,Q093_f0b4325f4798ba42,Q093,same,different,different,variant,variant,0,0,0,,24,2026-10-22T03:02:01.222Z,v7,2bf890b296f6
+EI,Q093_782619179df95815,Q093,same,different,different,variant,variant,0,0,0,,47,2026-10-22T03:02:48.602Z,v7,2bf890b296f6
+EI,Q094_09b398a684cc89d0,Q094,different,,,different,different,0,0,0,,3731,2026-10-22T04:04:59.208Z,v7,2bf890b296f6
+EI,Q095_e355110770138a20,Q095,same,same,same,same,same,1,0,0,different font do dosage form,109,2026-10-22T04:06:48.631Z,v7,2bf890b296f6
+EI,Q095_90fb5557396d4a4e,Q095,different,,,different,different,0,0,0,,51,2026-10-22T04:07:39.537Z,v7,2bf890b296f6
+EI,Q096_f068d480971d3209,Q096,same,same,same,same,same,0,0,0,,50,2026-10-22T04:08:29.411Z,v7,2bf890b296f6
+EI,Q096_4a86e98494179795,Q096,same,same,same,same,same,0,0,0,,36,2026-10-22T04:09:05.391Z,v7,2bf890b296f6
+EI,Q098_78a54066c584bcb5,Q098,same,same,same,same,same,0,0,0,old package is the same,123,2026-10-22T04:11:08.312Z,v7,2bf890b296f6
+EI,Q099_b937f2b3cd5a8fdd,Q099,different,,,different,different,0,0,0,,61,2026-10-22T04:12:09.049Z,v7,2bf890b296f6
+EI,Q099_0ff3475b3fc77b5b,Q099,different,,,different,different,0,0,0,,13,2026-10-22T04:12:22.456Z,v7,2bf890b296f6
+EI,Q099_5e77e71b80495989,Q099,different,,,different,different,0,0,0,,7,2026-10-22T04:12:29.534Z,v7,2bf890b296f6
+EI,Q099_f09ebfb48a8473af,Q099,different,,,different,different,0,0,0,,21,2026-10-22T04:12:50.472Z,v7,2bf890b296f6

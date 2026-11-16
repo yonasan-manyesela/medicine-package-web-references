@@ -1,0 +1,8 @@
+# third-party web content and private photographs are not redistributed
+runs/
+source_context_v3/
+data/query_images/
+tools/chromedriver*
+__pycache__/
+*.env
+.env

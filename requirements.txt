@@ -1,0 +1,14 @@
+# Python 3.12; versions used for the paper (lab PC, Windows, CPU)
+pandas==3.0.3
+numpy==1.26.4
+requests==2.34.2
+certifi==2026.5.20
+beautifulsoup4==4.14.3
+pillow==12.2.0
+selenium==4.44.0
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.2.0+cpu
+kornia==0.8.3
+lightglue @ git+https://github.com/cvg/LightGlue.git@eb42fee2d71449efb0aa5c10549752b5d75384d8
+openai==2.38.0
+matplotlib==3.10.9

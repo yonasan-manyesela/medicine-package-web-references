@@ -1,0 +1,101 @@
+﻿query_id,package_id,product_name,search_query_name,image_filename,query_image_path,query_image_abspath,slug,dataset,include_in_exp,crawl_collect_num,top_k,notes,form,form_evidence,ocr_cache
+Q001,1,Artefan 20/120,Artefan 20/120,001.JPG,data/query_images/001.JPG,data/query_images/001.JPG,Artefan_20_120,field_tanzania_addo,1,10,3,,tablet,tablet:Tablets; tablet:Comprimés; tablet:Tablets,ok
+Q002,2,D-Artepp,D-Artepp,002.jpg,data/query_images/002.jpg,data/query_images/002.jpg,D-Artepp,field_tanzania_addo,1,10,3,,tablet,tablet:Tablets; tablet:Comprimés,ok
+Q003,3,ARTEQUICK,ARTEQUICK,003.JPG,data/query_images/003.JPG,data/query_images/003.JPG,ARTEQUICK,field_tanzania_addo,1,10,3,,tablet,tablet:tablets; tablet:comprimés; tablet:Tablets,ok
+Q004,4,Becoactin,Becoactin,004.jpg,data/query_images/004.jpg,data/query_images/004.jpg,Becoactin,field_tanzania_addo,1,10,3,,tablet,tablet:CAPLETS; tablet:TABLETS,ok
+Q005,5,Clamoxyl,Clamoxyl,005.jpg,data/query_images/005.jpg,data/query_images/005.jpg,Clamoxyl,field_tanzania_addo,1,10,3,,suspension,suspension:suspension; suspension:suspension; powder:Poudre; powder:Powder,ok
+Q006,6,CO-MALATHER,CO-MALATHER,006.JPG,data/query_images/006.JPG,data/query_images/006.JPG,CO-MALATHER,field_tanzania_addo,1,10,3,,tablet,tablet:Tablets; tablet:Tablets,ok
+Q007,7,Cipronat,Cipronat,007.jpg,data/query_images/007.jpg,data/query_images/007.jpg,Cipronat,field_tanzania_addo,1,10,3,,tablet,tablet:Filmcoated; tablet:tablets,ok
+Q008,8,DUO-COTECXIN,DUO-COTECXIN,008.JPG,data/query_images/008.JPG,data/query_images/008.JPG,DUO-COTECXIN,field_tanzania_addo,1,10,3,,tablet,tablet:comprimés,ok
+Q009,9,EKELFIN,EKELFIN,009.jpg,data/query_images/009.jpg,data/query_images/009.jpg,EKELFIN,field_tanzania_addo,1,10,3,,tablet,tablet:tablet; tablet:comprime; tablet:Tablets,ok
+Q010,10,Laefin,Laefin,010.JPG,data/query_images/010.JPG,data/query_images/010.JPG,Laefin,field_tanzania_addo,1,10,3,,tablet,tablet:Tablets; tablet:Tablets,ok
+Q011,11,ARTEMETRIN DS,ARTEMETRIN DS,011.PNG,data/query_images/011.PNG,data/query_images/011.PNG,ARTEMETRIN_DS,nafdac_alert,1,10,3,,tablet,tablet:Tablets; tablet:Tablets,ok
+Q012,12,CLAXITODIN,CLAXITODIN,012.PNG,data/query_images/012.PNG,data/query_images/012.PNG,CLAXITODIN,nafdac_alert,1,10,3,,injection,injection:Ampoules; injection:ampoule; injection:Injection,ok
+Q013,13,Ciprofit 500,Ciprofit 500,013.PNG,data/query_images/013.PNG,data/query_images/013.PNG,Ciprofit_500,nafdac_alert,1,10,3,,tablet,tablet:Tablets; tablet:Comprimés; tablet:أقراص,ok
+Q014,14,EXTOCIN Injection,EXTOCIN Injection,014.PNG,data/query_images/014.PNG,data/query_images/014.PNG,EXTOCIN_Injection,nafdac_alert,1,10,3,,injection,injection:Injection; injection:Ampoules; injection:ampoule,ok
+Q015,15,Erostin-10,Erostin-10,015.JPG,data/query_images/015.JPG,data/query_images/015.JPG,Erostin-10,field_tanzania_addo,1,10,3,,tablet,tablet:TABLETS; tablet:COMPRIMÉS; tablet:Tablets,ok
+Q016,16,Esofag-40,Esofag-40,016.JPG,data/query_images/016.JPG,data/query_images/016.JPG,Esofag-40,field_tanzania_addo,1,10,3,,tablet,tablet:Tablets; tablet:Comprimés; tablet:Tablets,ok
+Q017,17,Healmoxy Capsules 500 mg,Healmoxy Capsules 500 mg,017.jpg,data/query_images/017.jpg,data/query_images/017.jpg,Healmoxy_Capsules_500_mg,nafdac_alert,1,10,3,,capsule,capsule:CAPSULES; capsule:GELULES; capsule:Capsules; gel:GEL,ok
+Q018,18,Moxacil 250,Moxacil 250,018.JPG,data/query_images/018.JPG,data/query_images/018.JPG,Moxacil_250,nafdac_alert,1,10,3,,capsule,capsule:Capsules; capsule:Capsules,ok
+Q019,19,OZEMPIC 1 mg,OZEMPIC 1 mg,019.jpg,data/query_images/019.jpg,data/query_images/019.jpg,OZEMPIC_1_mg,nafdac_alert,1,10,3,,injection,injection:injection; solution:solution,ok
+Q020,20,Cetal sinus,Cetal sinus,020.JPG,data/query_images/020.JPG,data/query_images/020.JPG,Cetal_sinus,mendeley_public,1,10,3,,tablet,tablet:Caplets,ok
+Q021,21,adol,adol,021.jpg,data/query_images/021.jpg,data/query_images/021.jpg,adol,mendeley_public,1,10,3,,tablet,tablet:CAPLETS; tablet:Caplets,ok
+Q022,22,ACRETIN 0.05%,ACRETIN 0.05%,022.jpg,data/query_images/022.jpg,data/query_images/022.jpg,ACRETIN_0.05,mendeley_public,1,10,3,,cream,cream:CREAM,ok
+Q023,23,Augmentin 1 g,Augmentin 1 g,023.jpg,data/query_images/023.jpg,data/query_images/023.jpg,Augmentin_1_g,mendeley_public,1,10,3,,tablet,tablet:film coated; tablet:tablet; tablet:Film coated,ok
+Q024,24,Benogen,Benogen,024.jpg,data/query_images/024.jpg,data/query_images/024.jpg,Benogen,mendeley_public,1,10,3,,sachet,sachet:Sachet,ok
+Q025,25,daflon 500 mg,daflon 500 mg,025.jpg,data/query_images/025.jpg,data/query_images/025.jpg,daflon_500_mg,mendeley_public,1,10,3,,tablet,tablet:film coated; tablet:tablets,ok
+Q026,26,Dentinox,Dentinox,026.jpg,data/query_images/026.jpg,data/query_images/026.jpg,Dentinox,mendeley_public,1,10,3,,drops,drops:Drops,ok
+Q027,27,Brufen,Brufen,027.jpg,data/query_images/027.jpg,data/query_images/027.jpg,Brufen,mendeley_public,1,10,3,,tablet,tablet:tablets,ok
+Q028,28,Bivatracin,Bivatracin,028.jpg,data/query_images/028.jpg,data/query_images/028.jpg,Bivatracin,mendeley_public,1,10,3,,spray,spray:Spray; spray:Spray; powder:powder; powder:powder,ok
+Q029,29,AMRIZOLE 500 mg,AMRIZOLE 500 mg,029.JPG,data/query_images/029.JPG,data/query_images/029.JPG,AMRIZOLE_500_mg,mendeley_public,1,10,3,,tablet,tablet:Film Coated; tablet:Tablets,ok
+Q030,30,Amlozaar,Amlozaar,030.JPG,data/query_images/030.JPG,data/query_images/030.JPG,Amlozaar,field_tanzania_addo,1,10,3,,tablet,tablet:Tablets; tablet:Comprimés; tablet:Tablets,ok
+Q031,31,ARH-L,ARH-L,031.JPG,data/query_images/031.JPG,data/query_images/031.JPG,ARH-L,field_tanzania_addo,1,10,3,,tablet,tablet:Tablets; tablet:Tablets,ok
+Q032,32,Artefan Dispersible,Artefan Dispersible,032.JPG,data/query_images/032.JPG,data/query_images/032.JPG,Artefan_Dispersible,field_tanzania_addo,1,10,3,,tablet,tablet:Dispersible; tablet:Tablets; tablet:Dispersible,ok
+Q033,33,Artequin 600/750,Artequin 600/750,033.JPG,data/query_images/033.JPG,data/query_images/033.JPG,Artequin_600_750,field_tanzania_addo,1,10,3,,tablet,tablet:comprimés,ok
+Q034,34,Ascard-75,Ascard-75,034.JPG,data/query_images/034.JPG,data/query_images/034.JPG,Ascard-75,field_tanzania_addo,1,10,3,,tablet,tablet:Tablets; tablet:Tablets; tablet:tablet,ok
+Q035,35,Aspirin cardio,Aspirin cardio,035.JPG,data/query_images/035.JPG,data/query_images/035.JPG,Aspirin_cardio,field_tanzania_addo,1,10,3,,tablet,tablet:tablet; tablet:tablets,ok
+Q036,36,Bi-Profenid LP,Bi-Profenid LP,036.JPG,data/query_images/036.JPG,data/query_images/036.JPG,Bi-Profenid_LP,field_tanzania_addo,1,10,3,,tablet,tablet:comprimés; tablet:tablets,ok
+Q037,37,Crestor,Crestor,037.JPG,data/query_images/037.JPG,data/query_images/037.JPG,Crestor,field_tanzania_addo,1,10,3,,tablet,tablet:tablets,ok
+Q038,38,Curam 625,Curam 625,038.JPG,data/query_images/038.JPG,data/query_images/038.JPG,Curam_625,field_tanzania_addo,1,10,3,,tablet,tablet:film-coated; tablet:tablets; tablet:comprimés,ok
+Q039,39,Etroside,Etroside,039.JPG,data/query_images/039.JPG,data/query_images/039.JPG,Etroside,field_tanzania_addo,1,10,3,,tablet,tablet:Tablets; tablet:Comprimés,ok
+Q040,40,Gramocef-O 400,Gramocef-O 400,040.JPG,data/query_images/040.JPG,data/query_images/040.JPG,Gramocef-O_400,field_tanzania_addo,1,10,3,,capsule,capsule:Capsules; capsule:Gélules; capsule:Capsules,ok
+Q041,41,Itacare,Itacare,041.JPG,data/query_images/041.JPG,data/query_images/041.JPG,Itacare,field_tanzania_addo,1,10,3,,capsule,capsule:Capsules; capsule:Gélules; capsule:Capsules,ok
+Q042,42,Lamitar AM,Lamitar AM,042.JPG,data/query_images/042.JPG,data/query_images/042.JPG,Lamitar_AM,field_tanzania_addo,1,10,3,,tablet,tablet:Comprimés; tablet:Tablets,ok
+Q043,43,LARTEM,LARTEM,043.JPG,data/query_images/043.JPG,data/query_images/043.JPG,LARTEM,field_tanzania_addo,1,10,3,,tablet,tablet:Tablets; tablet:TABLETS,ok
+Q044,44,levobact-750,levobact-750,044.JPG,data/query_images/044.JPG,data/query_images/044.JPG,levobact-750,field_tanzania_addo,1,10,3,,tablet,tablet:Tablets; tablet:Comprimés; tablet:Tablets,ok
+Q045,45,Lumartem,Lumartem,045.JPG,data/query_images/045.JPG,data/query_images/045.JPG,Lumartem,field_tanzania_addo,1,10,3,,tablet,tablet:Tablets; tablet:Tablets,ok
+Q046,46,Lumerax DT 20/120,Lumerax DT 20/120,046.JPG,data/query_images/046.JPG,data/query_images/046.JPG,Lumerax_DT_20_120,field_tanzania_addo,1,10,3,,tablet,tablet:Dispersible; tablet:Tablets; tablet:Dispersible,ok
+Q047,47,Malafin,Malafin,047.JPG,data/query_images/047.JPG,data/query_images/047.JPG,Malafin,field_tanzania_addo,1,10,3,,tablet,tablet:Tablets; tablet:Tablets,ok
+Q048,48,ARH-A,ARH-A,048.JPG,data/query_images/048.JPG,data/query_images/048.JPG,ARH-A,field_tanzania_addo,1,10,3,,injection,injection:Injection; injection:Ampoules,ok
+Q049,49,Metformin Denk 500,Metformin Denk 500,049.JPG,data/query_images/049.JPG,data/query_images/049.JPG,Metformin_Denk_500,field_tanzania_addo,1,10,3,,tablet,tablet:film-coated; tablet:tablets; tablet:comprimés,ok
+Q050,50,Nebilong-H,Nebilong-H,050.JPG,data/query_images/050.JPG,data/query_images/050.JPG,Nebilong-H,field_tanzania_addo,1,10,3,,tablet,tablet:Tablets; tablet:Comprimés; tablet:Tablets,ok
+Q051,51,neurocare,neurocare,051.JPG,data/query_images/051.JPG,data/query_images/051.JPG,neurocare,field_tanzania_addo,1,10,3,,capsule,capsule:Capsules; capsule:Capsules,ok
+Q052,52,Nexium,Nexium,052.JPG,data/query_images/052.JPG,data/query_images/052.JPG,Nexium,field_tanzania_addo,1,10,3,,sachet,suspension:Suspension; sachet:Sachets; sachet:Granules,ok
+Q053,53,Nifedi-Denk 20 Retard,Nifedi-Denk 20 Retard,053.JPG,data/query_images/053.JPG,data/query_images/053.JPG,Nifedi-Denk_20_Retard,field_tanzania_addo,1,10,3,,tablet,tablet:tablets; tablet:comprimés,ok
+Q054,54,ORODAR,ORODAR,054.JPG,data/query_images/054.JPG,data/query_images/054.JPG,ORODAR,field_tanzania_addo,1,10,3,,tablet,tablet:Tablets,ok
+Q055,55,SPASMOMEN,SPASMOMEN,055.JPG,data/query_images/055.JPG,data/query_images/055.JPG,SPASMOMEN,field_tanzania_addo,1,10,3,,tablet,tablet:film-coated; tablet:tablets,ok
+Q056,56,SULPHADAR,SULPHADAR,056.JPG,data/query_images/056.JPG,data/query_images/056.JPG,SULPHADAR,field_tanzania_addo,1,10,3,,tablet,tablet:Tablets; tablet:Tablets,ok
+Q057,57,TRIALGIC,TRIALGIC,057.JPG,data/query_images/057.JPG,data/query_images/057.JPG,TRIAGIC,field_tanzania_addo,1,10,3,,capsule,capsule:Gélules,ok
+Q058,58,UTROGESTAN,UTROGESTAN,058.JPG,data/query_images/058.JPG,data/query_images/058.JPG,UTROGESTAN,field_tanzania_addo,1,10,3,,capsule,capsule:Capsules; capsule:capsules,ok
+Q059,59,VOMI-6,VOMI-6,059.JPG,data/query_images/059.JPG,data/query_images/059.JPG,VOMI-6,field_tanzania_addo,1,10,3,,tablet,tablet:Tablets; tablet:Tablets,ok
+Q060,60,Zoladex LA 10.8 mg,Zoladex LA 10.8 mg,060.JPG,data/query_images/060.JPG,data/query_images/060.JPG,Zoladex_LA_10.8_mg,field_tanzania_addo,1,10,3,,injection,injection:injection,ok
+Q061,61,XERIN,XERIN,061.JPG,data/query_images/061.JPG,data/query_images/061.JPG,XERIN,field_tanzania_addo,1,10,3,,tablet,tablet:Tablets; tablet:Tablets,ok
+Q062,62,Zyrtec,Zyrtec,062.JPG,data/query_images/062.JPG,data/query_images/062.JPG,Zyrtec,mendeley_public,1,10,3,,tablet,tablet:film-coated; tablet:tablets,ok
+Q063,63,Zenta,Zenta,063.JPG,data/query_images/063.JPG,data/query_images/063.JPG,Zenta,mendeley_public,1,10,3,,cream,cream:Cream,ok
+Q064,64,VISCERALGINE,VISCERALGINE,064.JPG,data/query_images/064.JPG,data/query_images/064.JPG,VISCERALGINE,mendeley_public,1,10,3,,syrup,syrup:Syrup; syrup:SYRUP,ok
+Q065,65,Streptoquin,Streptoquin,065.JPG,data/query_images/065.JPG,data/query_images/065.JPG,Streptoquin,mendeley_public,1,10,3,,tablet,tablet:Tablets,ok
+Q066,66,SelokenZOC 100 mg,SelokenZOC 100 mg,066.JPG,data/query_images/066.JPG,data/query_images/066.JPG,SelokenZOC_100_mg,mendeley_public,1,10,3,,tablet,tablet:Tablet; tablet:Tablets,ok
+Q067,67,Rhinopro,Rhinopro,067.JPG,data/query_images/067.JPG,data/query_images/067.JPG,Rhinopro,mendeley_public,1,10,3,,capsule,capsule:Capsules; capsule:capsule,ok
+Q068,68,paramol,paramol,068.JPG,data/query_images/068.JPG,data/query_images/068.JPG,paramol,mendeley_public,1,10,3,,tablet,tablet:Tablets,ok
+Q069,69,Neurovit,Neurovit,069.JPG,data/query_images/069.JPG,data/query_images/069.JPG,Neurovit,mendeley_public,1,10,3,,tablet,tablet:tablets,ok
+Q070,70,Megamox,Megamox,070.JPG,data/query_images/070.JPG,data/query_images/070.JPG,Megamox,mendeley_public,1,10,3,,tablet,tablet:Film coated; tablet:tablets,ok
+Q071,71,JUSPRIN 81mg,JUSPRIN 81mg,071.JPG,data/query_images/071.JPG,data/query_images/071.JPG,JUSPRIN_81mg,mendeley_public,1,10,3,,tablet,tablet:Tablets; gel:جل,ok
+Q072,72,Ivypront,Ivypront,072.JPG,data/query_images/072.JPG,data/query_images/072.JPG,Ivypront,mendeley_public,1,10,3,,syrup,syrup:Syrup,ok
+Q073,73,Gabalepsy,Gabalepsy,073.JPG,data/query_images/073.JPG,data/query_images/073.JPG,Gabalepsy,mendeley_public,1,10,3,,capsule,capsule:capsule; gel:Gel,ok
+Q074,74,FLOXABACT,FLOXABACT,074.JPG,data/query_images/074.JPG,data/query_images/074.JPG,FLOXABACT,mendeley_public,1,10,3,,tablet,tablet:Film coated; tablet:tablets,ok
+Q075,75,Flagyl,Flagyl,075.JPG,data/query_images/075.JPG,data/query_images/075.JPG,Flagyl,mendeley_public,1,10,3,,tablet,tablet:Film coated; tablet:tablets,ok
+Q076,76,Diclac 75 ID,Diclac 75 ID,076.JPG,data/query_images/076.JPG,data/query_images/076.JPG,Diclac_75_ID,mendeley_public,1,10,3,,tablet,tablet:tablet; tablet:tablets,ok
+Q077,77,CIPROFAR 500 mg,CIPROFAR 500 mg,077.JPG,data/query_images/077.JPG,data/query_images/077.JPG,CIPROFAR_500_mg,mendeley_public,1,10,3,,tablet,tablet:Film Coated; tablet:Tablets,ok
+Q078,78,Ciprodiazole,Ciprodiazole,078.JPG,data/query_images/078.JPG,data/query_images/078.JPG,Ciprodiazole,mendeley_public,1,10,3,,tablet,tablet:film coated; tablet:tablets,ok
+Q079,79,CEMICRESTO,CEMICRESTO,079.JPG,data/query_images/079.JPG,data/query_images/079.JPG,CEMICRESTO,mendeley_public,1,10,3,,tablet,tablet:Film Coated; tablet:Tablets,ok
+Q080,80,Asmakast,Asmakast,080.JPG,data/query_images/080.JPG,data/query_images/080.JPG,Asmakast,mendeley_public,1,10,3,,tablet,tablet:Film coated; tablet:tablets,ok
+Q081,81,Aggrex,Aggrex,081.JPG,data/query_images/081.JPG,data/query_images/081.JPG,Aggrex,mendeley_public,1,10,3,,tablet,tablet:Tablets,ok
+Q082,82,Antopral,Antopral,082.JPG,data/query_images/082.JPG,data/query_images/082.JPG,Antropral,mendeley_public,1,10,3,,tablet,tablet:tablets,ok
+Q083,83,Tareg 40,Tareg 40,083.JPG,data/query_images/083.JPG,data/query_images/083.JPG,Tareg_40,mendeley_public,1,10,3,,tablet,tablet:film coated; tablet:tablets,ok
+Q084,84,Rheumatizen,Rheumatizen,084.JPG,data/query_images/084.JPG,data/query_images/084.JPG,Rheumatizen,mendeley_public,1,10,3,,cream,cream:Cream,ok
+Q085,85,Reparil-Gel N,Reparil-Gel N,085.JPG,data/query_images/085.JPG,data/query_images/085.JPG,Reparil-Gel_N,mendeley_public,1,10,3,,gel,gel:Gel,ok
+Q086,86,Prinorelax,Prinorelax,086.JPG,data/query_images/086.JPG,data/query_images/086.JPG,Prinorelax,mendeley_public,1,10,3,,capsule,capsule:Capsules,ok
+Q087,87,Phenadone,Phenadone,087.JPG,data/query_images/087.JPG,data/query_images/087.JPG,Phenadone,mendeley_public,1,10,3,,syrup,syrup:Syrup,ok
+Q088,88,Mucophylline,Mucophylline,088.JPG,data/query_images/088.JPG,data/query_images/088.JPG,Mucophylline,mendeley_public,1,10,3,,syrup,syrup:Syrup,ok
+Q089,89,Lovir,Lovir,089.JPG,data/query_images/089.JPG,data/query_images/089.JPG,Lovir,mendeley_public,1,10,3,,tablet,tablet:Dispersible; tablet:Tablets,ok
+Q090,90,HISTAZINE-1,HISTAZINE-1,090.JPG,data/query_images/090.JPG,data/query_images/090.JPG,HISTAZINE-1,mendeley_public,1,10,3,,tablet,tablet:Tablets; tablet:Tablets,ok
+Q091,91,GLUCOPHAGE,GLUCOPHAGE,091.JPG,data/query_images/091.JPG,data/query_images/091.JPG,GLUCOPHAGE,mendeley_public,1,10,3,,tablet,tablet:Film coated; tablet:tablets,ok
+Q092,92,EZAMOL-C,EZAMOL-C,092.JPG,data/query_images/092.JPG,data/query_images/092.JPG,EZAMOL-C,mendeley_public,1,10,3,,,,ok
+Q093,93,CELEBREX,CELEBREX,093.JPG,data/query_images/093.JPG,data/query_images/093.JPG,CELEBREX,mendeley_public,1,10,3,,capsule,capsule:Capsules,ok
+Q094,94,Cataflam,Cataflam,094.JPG,data/query_images/094.JPG,data/query_images/094.JPG,Cataflam,mendeley_public,1,10,3,,tablet,tablet:tablets,ok
+Q095,95,Avosoya 300 mg,Avosoya 300 mg,095.JPG,data/query_images/095.JPG,data/query_images/095.JPG,Avosoya_300_mg,mendeley_public,1,10,3,,capsule,capsule:Capsules,ok
+Q096,96,Anuva,Anuva,096.JPG,data/query_images/096.JPG,data/query_images/096.JPG,Anuva,mendeley_public,1,10,3,,tablet,tablet:dispersible; tablet:tablets,ok
+Q097,97,Lamifen,Lamifen,097.JPG,data/query_images/097.JPG,data/query_images/097.JPG,Lamifen,mendeley_public,1,10,3,,cream,cream:cream,ok
+Q098,98,Hemoclar Cream 0.5%,Hemoclar Cream 0.5%,098.JPG,data/query_images/098.JPG,data/query_images/098.JPG,Hemoclar_Cream_0.5,mendeley_public,1,10,3,,cream,cream:Cream,ok
+Q099,99,midodrine 2.5 mg,midodrine 2.5 mg,099.JPG,data/query_images/099.JPG,data/query_images/099.JPG,midodrine_2.5_mg,mendeley_public,1,10,3,,tablet,tablet:Tablets,ok
+Q100,100,Remowax,Remowax,100.JPG,data/query_images/100.JPG,data/query_images/100.JPG,Remowax,mendeley_public,1,10,3,,drops,drops:Drops,ok

@@ -1,0 +1,996 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Pharmaceutical Reference · Image Labeling</title>
+
+<style>
+/* ==================== theme ==================== */
+:root {
+  --ground: #F1F2EF;
+  --surface: #FFFFFF;
+  --surface-2: #E8EAE4;
+  --ink: #1B2027;
+  --ink-2: #49525F;
+  --ink-3: #737F8D;
+  --line: #D4D7CF;
+  --line-2: #BFC4BA;
+  --accent: #2A6580;
+  --accent-hover: #1D536C;
+  --on-accent: #FFFFFF;
+  --warn: #B36F12;
+  --bad: #A8442C;
+  --good: #236E5A;
+  --figure-bg: #FAFAF7;
+  --veil: rgba(15, 20, 29, .72);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #101420;
+    --surface: #171C28;
+    --surface-2: #1E2431;
+    --ink: #E9EBF1;
+    --ink-2: #A7AFBF;
+    --ink-3: #8793A4;
+    --line: #282F3E;
+    --line-2: #343C4D;
+    --accent: #65AAC7;
+    --accent-hover: #85C4DB;
+    --on-accent: #0E1520;
+    --warn: #E8A94E;
+    --bad: #E0765A;
+    --good: #7CC6A3;
+    --figure-bg: #0D131D;
+    --veil: rgba(0, 0, 0, .85);
+  }
+}
+:root[data-theme="dark"] {
+  --ground: #101420;
+  --surface: #171C28;
+  --surface-2: #1E2431;
+  --ink: #E9EBF1;
+  --ink-2: #A7AFBF;
+  --ink-3: #8793A4;
+  --line: #282F3E;
+  --line-2: #343C4D;
+  --accent: #65AAC7;
+  --accent-hover: #85C4DB;
+  --on-accent: #0E1520;
+  --warn: #E8A94E;
+  --bad: #E0765A;
+  --good: #7CC6A3;
+  --figure-bg: #0D131D;
+  --veil: rgba(0, 0, 0, .85);
+}
+
+/* ==================== base ==================== */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: "Archivo", "Segoe UI", "Hiragino Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+button, input { font: inherit; }
+button {
+  background: var(--surface);
+  border: 1px solid var(--line-2);
+  border-radius: 3px;
+  color: var(--ink);
+  cursor: pointer;
+  padding: 9px 13px;
+  transition: background .13s, border-color .13s;
+}
+button:hover:not(:disabled) { background: var(--surface-2); }
+button:focus-visible, input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+button:disabled { opacity: .35; cursor: not-allowed; }
+button.primary {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--on-accent);
+  font-weight: 600;
+}
+button.primary:hover { background: var(--accent-hover); }
+button.ghost { border-color: var(--line); }
+.mono, kbd, .eyebrow, .mini, .metric, .choice-num, .image-tag, .footnote {
+  font-family: "IBM Plex Mono", "Cascadia Code", Consolas, monospace;
+}
+kbd {
+  font-size: 11px;
+  padding: 1px 5px;
+  border: 1px solid var(--line-2);
+  border-radius: 2px;
+  white-space: nowrap;
+}
+.eyebrow {
+  color: var(--ink-3);
+  font-size: 10.5px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.mini { font-size: 11px; color: var(--ink-3); }
+.wrap { max-width: 1380px; margin: 0 auto; padding: 24px 22px 60px; }
+
+/* ==================== header and progress ==================== */
+.page-head {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 17px;
+  margin-bottom: 20px;
+}
+.headline { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 18px; align-items: flex-start; }
+h1 {
+  font-size: clamp(24px, 3vw, 34px);
+  font-weight: 700;
+  letter-spacing: -.025em;
+  line-height: 1.18;
+  margin: 7px 0 8px;
+}
+.lede { max-width: 80ch; margin: 0; color: var(--ink-2); font-size: 13.5px; }
+.head-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; }
+.mode-label {
+  display: inline-block;
+  border: 1px solid var(--line-2);
+  color: var(--ink-2);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10px;
+  letter-spacing: .08em;
+  padding: 5px 9px;
+  white-space: nowrap;
+}
+.progress-area {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 18px;
+}
+.progress-track {
+  height: 5px;
+  flex: 1;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+.progress-fill { height: 100%; width: 0; background: var(--accent); }
+.metric { font-size: 11px; color: var(--ink-2); white-space: nowrap; }
+
+/* ==================== two-image comparison ==================== */
+.compare { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 14px; }
+.image-panel {
+  min-width: 0;
+  margin: 0;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  padding: 12px;
+}
+.image-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 10px; }
+.image-tag { color: var(--ink-3); font-size: 11px; letter-spacing: .06em; }
+.image-head strong { font-size: 12.5px; font-weight: 600; }
+.image-area {
+  height: clamp(260px, 42vh, 560px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--figure-bg);
+  border: 1px solid var(--line);
+  position: relative;
+  overflow: hidden;
+}
+.image-area img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  cursor: zoom-in;
+}
+.lens {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  box-shadow: 0 2px 15px #0005;
+  border: 2px solid var(--surface);
+  position: absolute;
+  pointer-events: none;
+  display: none;
+  background-repeat: no-repeat;
+}
+.image-caption { color: var(--ink-3); font-size: 11.5px; padding-top: 8px; }
+
+/* ==================== annotation controls ==================== */
+.section-heading {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  margin: 20px 0 10px;
+}
+.section-heading h2 { font-size: 14px; margin: 0; letter-spacing: -.005em; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.card { border: 1px solid var(--line); background: var(--surface); padding: 15px 17px; min-width: 0; }
+.card.disabled { opacity: .48; }
+.card-title { font-size: 13.5px; font-weight: 600; margin: 5px 0 12px; }
+.card-sub { font-size: 12px; color: var(--ink-2); margin: 9px 0 0; }
+.choices { display: grid; gap: 7px; }
+.choice {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  width: 100%;
+  text-align: left;
+  padding: 11px 12px;
+}
+.choice-num {
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line-2);
+  font-size: 11px;
+  color: var(--ink-2);
+}
+.choice.selected { border-color: var(--accent); background: var(--surface-2); }
+.choice.selected .choice-num { border-color: var(--accent); color: var(--accent); }
+.choice span:last-child { flex: 1; }
+.aux-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 14px; margin-top: 14px; }
+.flag-list { display: grid; gap: 8px; }
+.flag-item { display: grid; grid-template-columns: 210px 1fr; gap: 10px; align-items: start; }
+.flag-button { text-align: left; }
+.flag-button strong { color: var(--warn); }
+/* a set flag must be impossible to miss: filled, not just a border */
+.flag-button[aria-pressed="true"] { border-color: var(--warn); background: var(--warn); color: var(--surface); }
+.flag-button[aria-pressed="true"] strong { color: var(--surface); }
+.flag-def { font-size: 12px; color: var(--ink-2); line-height: 1.45; }
+.flag-def em { font-style: normal; color: var(--ink-3); }
+.flag-chips { margin-left: 8px; }
+.flag-chip { display: inline-block; margin-left: 4px; padding: 0 6px; border-radius: 3px; background: var(--warn);
+  color: var(--surface); font-size: 12px; font-weight: 600; }
+.auto-row { font-size: 12px; color: var(--ink-2); margin-top: 6px; }
+@media (max-width: 760px) { .flag-item { grid-template-columns: 1fr; } }
+.text-note {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--line-2);
+  border-radius: 3px;
+  padding: 10px 12px;
+  background: var(--surface);
+  color: var(--ink);
+}
+.annotation-foot {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  margin-top: 14px;
+  padding: 12px 17px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+.annotation-result { min-width: 260px; }
+.annotation-result .value { display: block; font-size: 17px; font-weight: 600; margin-top: 2px; }
+.result-good { color: var(--good); }
+.result-warn { color: var(--warn); }
+.result-bad { color: var(--bad); }
+.result-quiet { color: var(--ink-2); }
+.footer-actions { display: flex; flex-wrap: wrap; gap: 7px; align-items: center; }
+.footnote { color: var(--ink-3); font-size: 11px; margin: 15px 0 0; }
+
+/* ==================== dialogs and enlarged comparison ==================== */
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 22px;
+  background: var(--veil);
+}
+.overlay.show { display: flex; }
+.dialog {
+  background: var(--surface);
+  color: var(--ink);
+  width: min(720px, 100%);
+  max-height: min(90vh, 850px);
+  overflow: auto;
+  border: 1px solid var(--line);
+  padding: 24px 28px;
+  box-shadow: 0 8px 40px #0003;
+}
+.dialog h2 { font-size: 22px; margin: 6px 0 10px; }
+.dialog h3 { font-size: 13px; margin: 20px 0 5px; }
+.dialog p { margin: 7px 0; color: var(--ink-2); }
+.dialog table { border-collapse: collapse; width: 100%; font-size: 12.5px; margin: 12px 0 16px; }
+.dialog th, .dialog td { border-bottom: 1px solid var(--line); padding: 9px; text-align: left; vertical-align: top; }
+.dialog th { color: var(--ink-3); font-size: 11px; font-weight: 500; }
+.dialog input { width: 100%; padding: 11px 13px; background: var(--surface); color: var(--ink); border: 1px solid var(--line-2); margin: 14px 0; }
+.dialog ol, .dialog ul { margin: 6px 0 8px; padding-left: 22px; color: var(--ink-2); }
+.dialog li { margin: 3px 0; }
+.guide-flag { border-left: 3px solid var(--warn); padding: 6px 0 6px 12px; margin: 10px 0; }
+.guide-flag .flag-name { font-weight: 650; color: var(--ink); }
+.guide-flag p { margin: 4px 0; }
+.guide-flag .not { color: var(--ink-3); }
+.dialog-actions { display: flex; gap: 8px; justify-content: flex-end; margin-top: 15px; }
+.zoom-overlay { display: none; position: fixed; inset: 0; z-index: 30; background: #0D1118; padding: 12px; }
+.zoom-overlay.show { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.zoom-image { overflow: auto; display: flex; align-items: flex-start; justify-content: center; background: #070A0F; }
+.zoom-image img { max-width: none; height: auto; display: block; }
+.zoom-close { position: fixed; right: 24px; top: 24px; z-index: 31; }
+.storage-warning {
+  padding: 10px 16px;
+  background: var(--surface-2);
+  border: 1px solid var(--warn);
+  color: var(--ink);
+  font-size: 12px;
+  margin-bottom: 14px;
+}
+.toast {
+  display: none;
+  position: fixed;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 40;
+  background: var(--ink);
+  color: var(--ground);
+  border-radius: 3px;
+  padding: 10px 15px;
+  font-size: 12px;
+  box-shadow: 0 4px 18px #0003;
+}
+
+@media (max-width: 840px) {
+  .wrap { padding: 18px 12px 45px; }
+  .compare, .form-grid, .aux-grid { grid-template-columns: 1fr; }
+  .image-area { height: 30vh; }          /* phones: both images and Step 1 fit with less scrolling */
+  .lens { display: none !important; }
+  .zoom-overlay.show { grid-template-columns: 1fr; overflow: auto; }
+  .zoom-image { min-height: 280px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: 0s !important; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div id="storageWarning" class="storage-warning" role="status" hidden>Browser storage is unavailable. Unsaved labels may be lost when you close this page. Save CSV frequently.</div>
+  <!-- ==================== study header ==================== -->
+  <header class="page-head">
+    <div class="headline">
+      <div>
+        <h1>Same medicine?</h1>
+      </div>
+      <div class="head-actions">
+        <span class="mode-label" id="modeLabel">PRIMARY ANNOTATOR</span>
+        <button type="button" id="guideButton">Instructions <kbd>?</kbd></button>
+        <button type="button" id="importButton">Import CSV</button>
+        <button type="button" class="primary" id="saveButton">Save CSV</button>
+        <input id="importFile" type="file" accept=".csv" hidden>
+      </div>
+    </div>
+    <div class="progress-area">
+      <span class="metric" id="positionText">IMAGE — / —</span>
+      <div class="progress-track" aria-label="Labeling progress"><div class="progress-fill" id="progressFill"></div></div>
+      <span class="metric" id="progressText">0 labeled</span>
+    </div>
+  </header>
+
+  <!-- ==================== visual comparison ==================== -->
+  <section class="compare" aria-label="Comparison images">
+    <figure class="image-panel">
+      <div class="image-head"><strong>Query package</strong><span class="image-tag" id="queryIdentifier"></span></div>
+      <div class="image-area" id="queryArea">
+        <img id="queryImage" alt="Photograph of query package; click for enlarged comparison">
+        <div class="lens" id="queryLens"></div>
+      </div>
+    </figure>
+    <figure class="image-panel">
+      <div class="image-head"><strong>Retrieved candidate<span class="flag-chips" id="flagChipsTop"></span></strong><span class="image-tag">WEB IMAGE</span></div>
+      <div class="image-area" id="candidateArea">
+        <img id="candidateImage" alt="Retrieved candidate package; click for enlarged comparison">
+        <div class="lens" id="candidateLens"></div>
+      </div>
+    </figure>
+  </section>
+
+  <!-- ==================== annotation questions ==================== -->
+  <section class="form-grid" aria-label="Product identity questions">
+    <div class="card" id="brandCard">
+      <h3 class="card-title">Step 1 &mdash; Same brand?</h3>
+      <div class="choices">
+        <button type="button" class="choice" data-question="brand" data-answer="same" aria-pressed="false"><span class="choice-num">1</span><span>Same brand</span></button>
+        <button type="button" class="choice" data-question="brand" data-answer="different" aria-pressed="false"><span class="choice-num">2</span><span>Different brand, or no medicine package shown</span></button>
+        <button type="button" class="choice" data-question="brand" data-answer="unreadable" aria-pressed="false"><span class="choice-num">3</span><span>Cannot read one or both brand names</span></button>
+      </div>
+    </div>
+    <div class="card disabled" id="formCard">
+      <h3 class="card-title">Step 2 &mdash; Active ingredient(s), strength per unit, dosage form</h3>
+      <div class="choices">
+        <button type="button" class="choice" data-question="sf" data-answer="same" aria-pressed="false"><span class="choice-num">1</span><span>Both match</span></button>
+        <button type="button" class="choice" data-question="sf" data-answer="different" aria-pressed="false"><span class="choice-num">2</span><span>At least one differs</span></button>
+        <button type="button" class="choice" data-question="sf" data-answer="unreadable" aria-pressed="false"><span class="choice-num">3</span><span>Cannot determine</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== supplementary observations ==================== -->
+  <section class="aux-grid" aria-label="Optional observations">
+    <div class="card">
+      <h3 class="card-title">Flags (optional)</h3>
+      <div class="flag-list">
+        <div class="flag-item">
+          <button type="button" class="flag-button" id="flagM" aria-pressed="false"><strong>M</strong> &nbsp; Packaging difference</button>
+          <div class="flag-def">Pack size, unit count, printed age/weight instructions, language, country, logo, colour, or design differ.
+            <em>Only when the medicine matches or cannot be fully determined.</em></div>
+        </div>
+        <div class="flag-item">
+          <button type="button" class="flag-button" id="flagC" aria-pressed="false"><strong>C</strong> &nbsp; Part of a larger image</button>
+          <div class="flag-def">The package is part of a collage, document, advertisement, or wider scene, not the main subject.
+            <em>Not C: held in a hand, or shown with its own bottle or blister.</em></div>
+        </div>
+        <div class="flag-item">
+          <button type="button" class="flag-button" id="flagW" aria-pressed="false"><strong>W</strong> &nbsp; Watermark or overlay</button>
+          <div class="flag-def">Text or graphics added over the photograph: stock-photo watermark, website logo, price, or banner.
+            <em>Not W: text printed directly on the package.</em></div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <h3 class="card-title">Note (optional)</h3>
+      <input id="noteInput" class="text-note" type="text" maxlength="400" placeholder="e.g. 60 vs 30 units; ingredient unreadable">
+    </div>
+  </section>
+
+  <section class="annotation-foot" aria-label="Annotation result and navigation">
+    <div class="annotation-result">
+      <span class="value result-quiet" id="resultText" aria-live="polite">Not labeled</span><span class="flag-chips" id="flagChips"></span>
+      <div class="auto-row"><label><input type="checkbox" id="autoAdvance" checked> move on automatically when Step 1 is "different" or "cannot read"</label></div>
+    </div>
+    <div class="footer-actions">
+      <button type="button" id="backButton">← Previous <kbd>←</kbd></button>
+      <button type="button" id="unlabeledButton">Next unlabeled</button>
+      <button type="button" class="primary" id="nextButton">Next image → <kbd>Enter</kbd></button>
+    </div>
+  </section>
+</div>
+
+<!-- ==================== name and instruction dialogs ==================== -->
+<div class="overlay" id="nameOverlay" role="dialog" aria-modal="true" aria-labelledby="nameTitle">
+  <div class="dialog">
+    <div class="eyebrow">Start an annotation session</div>
+    <h2 id="nameTitle">Who is labeling?</h2>
+    <p>Enter your initials. Your annotations are stored separately by annotator and exported with your initials. Do not use the first annotator's labels.</p>
+    <input id="initialsInput" type="text" maxlength="40" autocomplete="off" placeholder="e.g. EI">
+    <div class="dialog-actions"><button type="button" class="primary" id="startButton">Begin annotation</button></div>
+  </div>
+</div>
+<div class="overlay" id="guideOverlay" role="dialog" aria-modal="true" aria-labelledby="guideTitle">
+  <div class="dialog">
+    <div class="eyebrow">Fixed annotation guide · Version __GUIDE_VERSION__</div>
+    <h2 id="guideTitle">Web Reference Annotation Guide</h2>
+
+    <h3>Purpose</h3>
+    <p>Annotate whether the <b>retrieved image</b> (right) shows packaging of the same medicine as the <b>query image</b> (left).</p>
+
+    <h3>Matching criteria</h3>
+    <p>Compare the information visible on both packages:</p>
+    <ol>
+      <li>Brand name</li>
+      <li>Active ingredient(s)</li>
+      <li>Strength per unit (e.g., 500 mg per tablet or 125 mg per 5 mL)</li>
+      <li>Dosage form (e.g., tablet, dispersible tablet, capsule, suspension)</li>
+    </ol>
+
+    <h3>How to decide</h3>
+    <ul>
+      <li><b>Same medicine:</b> all four criteria match.</li>
+      <li><b>Different variant:</b> the brand matches, but at least one of the other three criteria differs.</li>
+      <li><b>Different product:</b> the brand names differ, or no medicine package is shown.</li>
+      <li><b>Cannot determine:</b> no difference is identified, but the information needed to confirm a match is missing or unreadable.</li>
+    </ul>
+
+    <h3>Using the buttons</h3>
+    <table>
+      <thead><tr><th>Decision</th><th>Step 1 &mdash; Brand</th><th>Step 2 &mdash; Other three criteria</th></tr></thead>
+      <tbody>
+        <tr><td>Same medicine</td><td><kbd>1</kbd> Same brand</td><td><kbd>1</kbd> Both match</td></tr>
+        <tr><td>Different variant</td><td><kbd>1</kbd> Same brand</td><td><kbd>2</kbd> At least one differs</td></tr>
+        <tr><td>Different product</td><td><kbd>2</kbd> Different brand, or no medicine package shown</td><td>&mdash;</td></tr>
+        <tr><td>Cannot determine</td><td><kbd>3</kbd> Cannot read the brand</td><td>&mdash;</td></tr>
+        <tr><td>Cannot determine</td><td><kbd>1</kbd> Same brand</td><td><kbd>3</kbd> Cannot determine</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Optional flags</h3>
+    <div class="guide-flag">
+      <div class="flag-name">M &mdash; Packaging difference</div>
+      <p>Select when the packages differ in pack size, unit count, printed age/weight instructions, language, country, logo, colour, or design.</p>
+      <p class="not">Use only when the medicine matches or cannot be fully determined.</p>
+    </div>
+    <div class="guide-flag">
+      <div class="flag-name">C &mdash; Part of a larger image</div>
+      <p>Select when the retrieved package appears as part of a collage, document, advertisement, or wider scene, rather than as the main subject of the image.</p>
+      <p class="not">Do not select C simply because the package is held in a hand or shown alongside its own bottle or blister.</p>
+    </div>
+    <div class="guide-flag">
+      <div class="flag-name">W &mdash; Watermark or overlay</div>
+      <p>Select when text or graphics have been added over the retrieved photograph, such as a stock-photo watermark, website logo, price, or banner.</p>
+      <p class="not">Do not select W for text printed directly on the package.</p>
+    </div>
+    <p>Multiple flags may be selected when applicable.</p>
+
+    <h3>Important</h3>
+    <p>Use only the two displayed images. Do not use external searches or additional information.</p>
+
+    <p class="mini">Keyboard: 1&ndash;3 answer the active step &middot; M / C / W flags &middot; Enter next image &middot; &larr; / &rarr; move &middot; Z enlarged comparison &middot; ? this guide</p>
+    <div class="dialog-actions"><button type="button" class="primary" id="closeGuideButton">Continue labeling</button></div>
+  </div>
+</div>
+
+<div class="zoom-overlay" id="zoomOverlay" role="dialog" aria-modal="true" aria-label="Enlarged image comparison">
+  <div class="zoom-image"><img id="zoomQuery" alt="Enlarged query image"></div>
+  <div class="zoom-image"><img id="zoomCandidate" alt="Enlarged retrieved image"></div>
+  <button class="zoom-close" type="button" id="closeZoomButton">Close <kbd>Esc</kbd></button>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+"use strict";
+
+/* ==================== immutable study data ==================== */
+const GUIDE_VERSION = "__GUIDE_VERSION__";
+const STORE_VERSION = "v7_product_pack"; // New namespace: labels from earlier pages are imported for review, never reused silently.
+const BUILD_ID = "__BUILD_ID__";
+const ITEMS = __ITEMS_JSON__; // This file contains ONLY the permitted subset.
+// Packages sent to other people carry their images inside this file (data URIs), so the page
+// works even when opened straight from the zip. The researcher's full page uses the img/ folder.
+const IMAGES = __IMAGES_JSON__;
+const imgSrc = path => IMAGES[path] || path;
+const MODE = "__MODE__";              // primary | second | test
+const IS_SECOND = MODE === "second";
+const MODE_TEXT = {primary: "PRIMARY ANNOTATOR", second: "INDEPENDENT ANNOTATOR",
+                   test: "TEST RUN \u2014 labels not used"};
+const NAME_KEY = `reference_labeler_name_${MODE}`;
+const LABEL_NAMES = {                 // same wording as the guide's four decisions
+  same: "Same medicine",
+  variant: "Different variant",
+  different: "Different product",
+  unclear: "Cannot determine (brand unreadable)",
+  brand_only: "Cannot determine"
+};
+
+/* ==================== DOM and state ==================== */
+const $ = id => document.getElementById(id);
+const ui = {
+  mode: $("modeLabel"), position: $("positionText"), progress: $("progressText"),
+  fill: $("progressFill"), qid: $("queryIdentifier"),
+  query: $("queryImage"), candidate: $("candidateImage"),
+  formCard: $("formCard"), result: $("resultText"), note: $("noteInput"),
+  flagM: $("flagM"), flagC: $("flagC"), flagW: $("flagW"), chips: $("flagChips"), auto: $("autoAdvance"),
+  nameDialog: $("nameOverlay"), nameInput: $("initialsInput"),
+  guide: $("guideOverlay"), zoom: $("zoomOverlay"),
+  toast: $("toast")
+};
+let annotator = "";
+let answers = {};
+let position = 0;
+let enteredAt = Date.now();
+let toastTimer;
+let theme = "auto";
+
+function storageKey() {
+  return `reference_labeler_${STORE_VERSION}_${MODE}_${annotator}`;
+}
+function currentItem() { return ITEMS[position]; }
+function currentAnswer() {
+  const id = currentItem().id;
+  if (!answers[id]) answers[id] = {};
+  return answers[id];
+}
+function showStorageWarning() { $("storageWarning").hidden = false; }
+function readStorage(key, fallback) {
+  try { return localStorage.getItem(key) ?? fallback; }
+  catch (_) { showStorageWarning(); return fallback; }
+}
+function writeStorage(key, value) {
+  try { localStorage.setItem(key, value); }
+  catch (_) { showStorageWarning(); /* Downloadable CSV remains available. */ }
+}
+function saveLocal() { writeStorage(storageKey(), JSON.stringify(answers)); }
+function loadLocal() {
+  try { answers = JSON.parse(readStorage(storageKey(), "{}")); }
+  catch (_) { answers = {}; }
+}
+
+/* ==================== label derivation ==================== */
+function finalLabel(answer) {
+  if (!answer || !answer.brand) return "";
+  if (answer.brand === "different") return "different";
+  if (answer.brand === "unreadable") return "unclear";
+  if (!answer.sf) return "";
+  return ({same: "same", different: "variant", unreadable: "brand_only"})[answer.sf] || "";
+}
+function primaryLabel(answer) {
+  const label = finalLabel(answer);
+  return (label === "unclear" || label === "brand_only") ? "cannot_determine" : label;
+}
+function isComplete(answer) {
+  return Boolean(finalLabel(answer) && !answer.needs_review && answer.guide_version === GUIDE_VERSION);
+}
+function answeredCount() {
+  return ITEMS.reduce((sum, item) => sum + Number(isComplete(answers[item.id])), 0);
+}
+
+/* ==================== presentation ==================== */
+function refresh() {
+  const item = currentItem();
+  if (!item) return;
+  const answer = answers[item.id] || {};
+  ui.query.src = imgSrc(item.q);
+  ui.candidate.src = imgSrc(item.c);
+  ui.qid.textContent = item.qid;
+  ui.position.textContent = `PAIR ${position + 1} / ${ITEMS.length}`;
+
+  const done = answeredCount();
+  ui.progress.textContent = `${done} / ${ITEMS.length} labeled`;
+  ui.fill.style.width = `${(done / ITEMS.length) * 100}%`;
+
+  document.querySelectorAll(".choice").forEach(button => {
+    const chosen = answer[button.dataset.question] === button.dataset.answer;
+    button.classList.toggle("selected", chosen);
+    button.setAttribute("aria-pressed", String(chosen));
+    button.disabled = button.dataset.question === "sf" && answer.brand !== "same";
+  });
+  ui.formCard.classList.toggle("disabled", answer.brand !== "same");
+  const mEnabled = answer.brand === "same" &&
+    (answer.sf === "same" || answer.sf === "unreadable");
+  ui.flagM.disabled = !mEnabled;
+  ui.flagM.setAttribute("aria-pressed", String(Boolean(answer.pack && mEnabled)));
+  ui.flagC.setAttribute("aria-pressed", String(Boolean(answer.part)));
+  ui.flagW.setAttribute("aria-pressed", String(Boolean(answer.overlay)));
+  ui.chips.innerHTML = [["pack", "M"], ["part", "C"], ["overlay", "W"]]
+    .filter(([k]) => answer[k] && (k !== "pack" || mEnabled))
+    .map(([, t]) => `<span class="flag-chip">${t}</span>`).join("");
+  $("flagChipsTop").innerHTML = ui.chips.innerHTML;   // flags stay visible next to the image being judged
+  ui.note.value = answer.note || "";
+
+  const label = finalLabel(answer);
+  ui.result.textContent = answer.needs_review ? "Review this older label under the current guide: reselect the answer" :
+    label ? LABEL_NAMES[label] : "Not labeled";
+  ui.result.className = "value " +
+    (label === "same" ? "result-good" :
+     label === "different" || label === "variant" ? "result-warn" : "result-quiet");
+  prefetchNext();
+}
+function prefetchNext() {
+  for (const offset of [1, 2]) {
+    const item = ITEMS[position + offset];
+    if (!item) continue;
+    new Image().src = imgSrc(item.q);
+    new Image().src = imgSrc(item.c);
+  }
+}
+function notify(message) {
+  ui.toast.textContent = message;
+  ui.toast.style.display = "block";
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => { ui.toast.style.display = "none"; }, 3200);
+}
+function recordTime() {
+  const item = currentItem();
+  if (!item) return;
+  const answer = answers[item.id];
+  if (answer) {
+    answer.sec = Number(answer.sec || 0) + (Date.now() - enteredAt) / 1000;
+    answer.at = new Date().toISOString();
+    answer.guide_version = GUIDE_VERSION;
+    saveLocal();
+  }
+  enteredAt = Date.now();
+}
+
+/* ==================== answer and navigation ==================== */
+function answerQuestion(question, value) {
+  const answer = currentAnswer();
+  if (answer.needs_review && question === "brand" && value === "same") delete answer.sf;
+  answer[question] = value;
+  answer.needs_review = false;
+  if (question === "brand" && value !== "same") delete answer.sf;
+  if (!(answer.brand === "same" && ["same", "unreadable"].includes(answer.sf))) {
+    answer.pack = false;
+  }
+  answer.guide_version = GUIDE_VERSION;
+  answer.at = new Date().toISOString();
+  saveLocal();
+  refresh();
+  if (answeredCount() % 50 === 0 && answeredCount() > 0) {
+    notify(`${answeredCount()} labeled — consider saving a CSV backup`);
+  }
+  // Junk is one key: a final Step-1 answer moves on. After Step 2 the page waits for flags or a note.
+  if (question === "brand" && value !== "same" && ui.auto.checked && position < ITEMS.length - 1) {
+    setTimeout(() => move(1), 180);
+  } else if (question === "sf") {
+    notify("Add M, C, W or a note if needed, then go to the next image");
+  }
+}
+function toggleFlag(flag) {
+  const answer = currentAnswer();
+  if (flag === "pack" && ui.flagM.disabled) {
+    notify('M applies only after Step 2 = "both match" or "cannot determine"');
+    return;
+  }
+  answer[flag] = !answer[flag];
+  saveLocal();
+  refresh();
+}
+function move(direction) {
+  if (!ITEMS.length) return;
+  recordTime();
+  position = Math.max(0, Math.min(ITEMS.length - 1, position + direction));
+  refresh();
+  window.scrollTo({top: 0, behavior: "instant"});   // each new pair starts at the images (phones scroll)
+  ui.toast.style.display = "none";                  // a hint about the previous pair must not linger
+}
+function firstUnlabeled() {
+  recordTime();
+  const next = ITEMS.findIndex(item => !isComplete(answers[item.id]));
+  if (next === -1) notify("All image pairs are labeled. Save your CSV.");
+  else { position = next; refresh(); }
+}
+function activeQuestion() {
+  const answer = answers[currentItem().id] || {};
+  return answer.brand === "same" ? "sf" : "brand";
+}
+
+/* ==================== CSV export and import ==================== */
+const COLUMNS = [
+  "annotator", "item_id", "query_id", "brand", "strength_form", "product_attributes",
+  "label", "primary_label", "packaging_differs", "part_of_larger_image", "watermark_or_overlay", "note",
+  "seconds", "labelled_at", "guide_version", "build_id"
+];
+function csvEscape(value) {
+  const text = String(value ?? "");
+  return /[",\r\n]/.test(text) ? `"${text.replace(/"/g, '""')}"` : text;
+}
+function saveCsv() {
+  recordTime();
+  // '#' lines describe the file (who / when / which rules); readers skip them.
+  // No commas in these lines: spreadsheet programs would split them into columns.
+  const rows = [
+    "# Reference image labelling - product identity annotations",
+    `# annotator = ${annotator}`,
+    `# mode = ${({primary: "primary annotator (all items)", second: "independent second annotator (fixed subset)",
+                  test: "TEST RUN - practice items only - labels not used"})[MODE]}`,
+    `# guide_version = ${GUIDE_VERSION}   build_id = ${BUILD_ID}`,
+    `# items_in_page = ${ITEMS.length}   items_labelled = ${answeredCount()}`,
+    `# exported_at_utc = ${new Date().toISOString()}`,
+    "# label: same | variant | brand_only | different | unclear ; primary_label folds brand_only+unclear into cannot_determine",
+    "# flags: packaging_differs (M) / part_of_larger_image (C) / watermark_or_overlay (W) ; 1 = set",
+    "# NOTE labels describe which product the web image shows - not whether any package is genuine.",
+    COLUMNS.join(",")
+  ];
+  for (const item of ITEMS) {
+    const answer = answers[item.id];
+    if (!isComplete(answer)) continue;
+    rows.push([
+      annotator, item.id, item.qid, answer.brand, answer.sf || "", answer.sf || "",
+      finalLabel(answer), primaryLabel(answer), Number(Boolean(answer.pack)),
+      Number(Boolean(answer.part)), Number(Boolean(answer.overlay)), answer.note || "", Math.round(answer.sec || 0),
+      answer.at || "", answer.guide_version || GUIDE_VERSION, BUILD_ID
+    ].map(csvEscape).join(","));
+  }
+  const blob = new Blob(["\uFEFF", rows.join("\r\n") + "\r\n"], {type: "text/csv;charset=utf-8"});
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = `labels_${MODE}_${annotator.replace(/[^\w-]/g, "_")}_${new Date().toISOString().slice(0,10)}.csv`;
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+  notify("CSV saved — keep this file as your annotation backup");
+}
+function parseCsv(text) {
+  // Local parser supports quoted commas, line breaks, and escaped quotation marks.
+  text = text.replace(/^\uFEFF/, "");
+  const result = [];
+  let row = [], field = "", quoted = false;
+  for (let i = 0; i < text.length; i++) {
+    const ch = text[i];
+    if (quoted) {
+      if (ch === '"' && text[i+1] === '"') { field += '"'; i++; }
+      else if (ch === '"') quoted = false;
+      else field += ch;
+    } else if (ch === '"') quoted = true;
+    else if (ch === ',') { row.push(field); field = ""; }
+    else if (ch === '\n') { row.push(field); result.push(row); row = []; field = ""; }
+    else if (ch !== '\r') field += ch;
+  }
+  if (row.length || field) { row.push(field); result.push(row); }
+  return result.filter(row => row.length && !(row.length === 1 && !row[0]) &&
+    !String(row[0]).trimStart().startsWith("#"));
+}
+async function importCsv(file) {
+  if (!file) return;
+  const lines = parseCsv(await file.text());
+  if (lines.length < 2) { notify("No annotation rows found in the CSV"); return; }
+  const header = lines.shift();
+  const col = name => header.indexOf(name);
+  if (["item_id", "brand"].some(name => col(name) < 0) ||
+      (col("strength_form") < 0 && col("product_attributes") < 0)) {
+    notify("CSV missing the expected annotation fields");
+    return;
+  }
+  const validIds = new Set(ITEMS.map(item => item.id));
+  // Never import another annotator's decisions into an independent session.
+  if (col("annotator") >= 0 && lines.some(row => validIds.has(row[col("item_id")]) &&
+       row[col("annotator")] && row[col("annotator")] !== annotator)) {
+    notify("Import refused: CSV belongs to another annotator"); return;
+  }
+  let count = 0, old = 0;
+  for (const row of lines) {
+    const id = row[col("item_id")];
+    if (!validIds.has(id)) continue;
+    const field = name => col(name) < 0 ? "" : row[col(name)] || "";
+    const originalVersion = field("guide_version") || "unknown";
+    const needsReview = originalVersion !== GUIDE_VERSION;
+    if (needsReview) old++;
+    answers[id] = {
+      brand: field("brand"), sf: field("product_attributes") || field("strength_form"),
+      pack: field("packaging_differs") === "1",
+      part: field("part_of_larger_image") === "1",
+      overlay: field("watermark_or_overlay") === "1",
+      note: field("note"),
+      sec: Number(field("seconds")) || 0,
+      at: field("labelled_at"), guide_version: originalVersion,
+      needs_review: needsReview
+    };
+    count++;
+  }
+  saveLocal();
+  refresh();
+  notify(`${count} annotations imported. ${old} older-rule labels require review.`);
+}
+
+/* ==================== theme and dialogs ==================== */
+function setTheme(next) {
+  theme = next;
+  if (theme === "auto") document.documentElement.removeAttribute("data-theme");
+  else document.documentElement.dataset.theme = theme;
+  writeStorage("reference_labeler_theme", theme);
+}
+function cycleTheme() {
+  setTheme(({auto: "light", light: "dark", dark: "auto"})[theme]);
+}
+function showGuide() { ui.guide.classList.add("show"); }
+function closeGuide() {
+  ui.guide.classList.remove("show");
+  writeStorage(`reference_labeler_guide_seen_${GUIDE_VERSION}_${MODE}`, "1");
+}
+function showZoom(open) {
+  ui.zoom.classList.toggle("show", open);
+  if (open) {
+    $("zoomQuery").src = imgSrc(currentItem().q);
+    $("zoomCandidate").src = imgSrc(currentItem().c);
+  }
+}
+function startSession() {
+  const initials = ui.nameInput.value.trim();
+  if (!initials) { ui.nameInput.focus(); return; }
+  annotator = initials;
+  writeStorage(NAME_KEY, annotator);
+  ui.nameDialog.classList.remove("show");
+  loadLocal();
+  position = Math.max(0, ITEMS.findIndex(item => !isComplete(answers[item.id])));
+  enteredAt = Date.now();
+  refresh();
+  if (readStorage(`reference_labeler_guide_seen_${GUIDE_VERSION}_${MODE}`, "") !== "1") showGuide();
+}
+
+/* ==================== magnifier ==================== */
+function attachMagnifier(imageId, areaId, lensId) {
+  const image = $(imageId), area = $(areaId), lens = $(lensId);
+  image.addEventListener("click", () => showZoom(true));
+  image.addEventListener("mousemove", event => {
+    const imageRect = image.getBoundingClientRect();
+    const areaRect = area.getBoundingClientRect();
+    const x = event.clientX - imageRect.left;
+    const y = event.clientY - imageRect.top;
+    const scale = 2.8;
+    const half = 95;
+    lens.style.display = "block";
+    lens.style.left = `${event.clientX - areaRect.left - half}px`;
+    lens.style.top = `${event.clientY - areaRect.top - half}px`;
+    lens.style.backgroundImage = `url('${image.src}')`;
+    lens.style.backgroundSize = `${imageRect.width * scale}px ${imageRect.height * scale}px`;
+    lens.style.backgroundPosition = `${-x * scale + half}px ${-y * scale + half}px`;
+  });
+  image.addEventListener("mouseleave", () => { lens.style.display = "none"; });
+}
+
+/* ==================== interaction setup ==================== */
+function bindControls() {
+  document.querySelectorAll(".choice").forEach(button => {
+    button.addEventListener("click", () => answerQuestion(button.dataset.question, button.dataset.answer));
+  });
+  ui.flagM.addEventListener("click", () => toggleFlag("pack"));
+  ui.flagC.addEventListener("click", () => toggleFlag("part"));
+  ui.flagW.addEventListener("click", () => toggleFlag("overlay"));
+  ui.note.addEventListener("input", () => {
+    const answer = currentAnswer();
+    answer.note = ui.note.value;
+    saveLocal();
+  });
+  $("nextButton").addEventListener("click", () => move(1));
+  $("backButton").addEventListener("click", () => move(-1));
+  $("unlabeledButton").addEventListener("click", firstUnlabeled);
+  $("saveButton").addEventListener("click", saveCsv);
+  $("importButton").addEventListener("click", () => $("importFile").click());
+  $("importFile").addEventListener("change", event => importCsv(event.target.files[0]));
+  $("guideButton").addEventListener("click", showGuide);
+  $("closeGuideButton").addEventListener("click", closeGuide);
+  $("startButton").addEventListener("click", startSession);
+  ui.nameInput.addEventListener("keydown", event => {
+    if (event.key === "Enter") startSession();
+  });
+  $("closeZoomButton").addEventListener("click", () => showZoom(false));
+  attachMagnifier("queryImage", "queryArea", "queryLens");
+  attachMagnifier("candidateImage", "candidateArea", "candidateLens");
+
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape") {
+      if (ui.zoom.classList.contains("show")) showZoom(false);
+      else if (ui.guide.classList.contains("show")) closeGuide();
+      return;
+    }
+    if (ui.nameDialog.classList.contains("show") || ui.guide.classList.contains("show")) return;
+    if (ui.zoom.classList.contains("show")) {
+      if (event.key.toLowerCase() === "z") showZoom(false);
+      return;
+    }
+    const focusedTag = document.activeElement?.tagName;
+    if (["INPUT", "TEXTAREA"].includes(focusedTag)) return;
+    // Enter on a focused button should activate that button, not also advance.
+    if (focusedTag === "BUTTON" && ["Enter", " "].includes(event.key)) return;
+    if (["1", "2", "3"].includes(event.key)) {
+      const options = {1: "same", 2: "different", 3: "unreadable"};
+      answerQuestion(activeQuestion(), options[event.key]);
+    } else if (event.key.toLowerCase() === "m") toggleFlag("pack");
+    else if (event.key.toLowerCase() === "c") toggleFlag("part");
+    else if (event.key.toLowerCase() === "w") toggleFlag("overlay");
+    else if (event.key.toLowerCase() === "z") showZoom(true);
+    else if (event.key === "?") showGuide();
+    else if (event.key === "ArrowRight" || event.key === "Enter") { event.preventDefault(); move(1); }
+    else if (event.key === "ArrowLeft") { event.preventDefault(); move(-1); }
+  });
+}
+
+function initialize() {
+  ui.mode.textContent = MODE_TEXT[MODE];
+  if (MODE === "test") { ui.mode.style.background = "var(--warn)"; ui.mode.style.color = "var(--surface)"; }
+  setTheme(readStorage("reference_labeler_theme", "auto"));
+  bindControls();
+  annotator = readStorage(NAME_KEY, "");
+  if (!annotator) {
+    ui.nameDialog.classList.add("show");
+    ui.nameInput.focus();
+  } else {
+    loadLocal();
+    position = Math.max(0, ITEMS.findIndex(item => !isComplete(answers[item.id])));
+    enteredAt = Date.now();
+    refresh();
+    if (readStorage(`reference_labeler_guide_seen_${GUIDE_VERSION}_${MODE}`, "") !== "1") showGuide();
+  }
+}
+initialize();
+</script>
+</body>
+</html>

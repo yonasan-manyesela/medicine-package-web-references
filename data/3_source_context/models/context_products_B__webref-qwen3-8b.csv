@@ -1,0 +1,101 @@
+query_id,drug,pipeline,model,product_label,n_pages,n_error,page_labels,target_unclear,product_label_sensitivity
+Q001,Artefan 20/120,B,webref-qwen3-8b,product_information,3,0,insufficient|insufficient|product_information,0,product_information
+Q002,D-Artepp,B,webref-qwen3-8b,product_information,3,0,product_information|product_information|product_information,0,product_information
+Q003,ARTEQUICK,B,webref-qwen3-8b,product_information,3,0,insufficient|product_information|product_information,0,product_information
+Q004,Becoactin,B,webref-qwen3-8b,product_information,3,0,product_information|product_information|product_information,0,product_information
+Q005,Clamoxyl,B,webref-qwen3-8b,product_information,3,0,product_information|not_evaluable|product_information,0,product_information
+Q006,CO-MALATHER,B,webref-qwen3-8b,no_page,0,0,,0,no_page
+Q007,Cipronat,B,webref-qwen3-8b,product_information,3,0,product_information|product_information|product_information,0,product_information
+Q008,DUO-COTECXIN,B,webref-qwen3-8b,product_information,3,0,product_information|insufficient|not_evaluable,0,product_information
+Q009,EKELFIN,B,webref-qwen3-8b,no_page,0,0,,0,no_page
+Q010,Laefin,B,webref-qwen3-8b,no_page,0,0,,0,no_page
+Q011,ARTEMETRIN DS,B,webref-qwen3-8b,insufficient,1,0,insufficient,0,insufficient
+Q012,CLAXITODIN,B,webref-qwen3-8b,warning,3,0,warning|not_evaluable|insufficient,0,warning
+Q013,Ciprofit 500,B,webref-qwen3-8b,warning,3,0,insufficient|product_information|warning,0,warning
+Q014,EXTOCIN Injection,B,webref-qwen3-8b,product_information,3,0,insufficient|product_information|product_information,0,product_information
+Q015,Erostin-10,B,webref-qwen3-8b,product_information,3,0,product_information|product_information|product_information,0,product_information
+Q016,Esofag-40,B,webref-qwen3-8b,product_information,3,0,not_evaluable|product_information|product_information,0,product_information
+Q017,Healmoxy Capsules 500 mg,B,webref-qwen3-8b,warning,3,0,insufficient|warning|insufficient,0,warning
+Q018,Moxacil 250,B,webref-qwen3-8b,product_information,2,0,product_information|product_information,0,product_information
+Q019,OZEMPIC 1 mg,B,webref-qwen3-8b,product_information,3,0,not_evaluable|product_information|product_information,0,product_information
+Q020,Cetal sinus,B,webref-qwen3-8b,product_information,3,0,product_information|insufficient|not_evaluable,0,product_information
+Q021,adol,B,webref-qwen3-8b,warning,3,0,product_information|warning|product_information,0,warning
+Q022,ACRETIN 0.05%,B,webref-qwen3-8b,product_information,3,0,product_information|insufficient|not_evaluable,0,product_information
+Q023,Augmentin 1 g,B,webref-qwen3-8b,product_information,3,0,not_evaluable|product_information|not_evaluable,0,product_information
+Q024,Benogen,B,webref-qwen3-8b,no_page,0,0,,0,no_page
+Q025,daflon 500 mg,B,webref-qwen3-8b,product_information,3,0,product_information|product_information|not_evaluable,0,product_information
+Q026,Dentinox,B,webref-qwen3-8b,product_information,3,0,product_information|insufficient|product_information,0,product_information
+Q027,Brufen,B,webref-qwen3-8b,product_information,3,0,product_information|product_information|product_information,0,product_information
+Q028,Bivatracin,B,webref-qwen3-8b,product_information,3,0,product_information|product_information|not_evaluable,0,product_information
+Q029,AMRIZOLE 500 mg,B,webref-qwen3-8b,product_information,3,0,insufficient|product_information|not_evaluable,0,product_information
+Q030,Amlozaar,B,webref-qwen3-8b,product_information,3,0,product_information|product_information|product_information,0,product_information
+Q031,ARH-L,B,webref-qwen3-8b,no_page,0,0,,0,no_page
+Q032,Artefan Dispersible,B,webref-qwen3-8b,product_information,3,0,product_information|product_information|product_information,0,product_information
+Q033,Artequin 600/750,B,webref-qwen3-8b,product_information,3,0,product_information|product_information|not_evaluable,0,product_information
+Q034,Ascard-75,B,webref-qwen3-8b,product_information,3,0,product_information|product_information|product_information,0,product_information
+Q035,Aspirin cardio,B,webref-qwen3-8b,warning,3,0,not_evaluable|product_information|warning,0,warning
+Q036,Bi-Profenid LP,B,webref-qwen3-8b,product_information,3,0,insufficient|insufficient|product_information,0,product_information
+Q037,Crestor,B,webref-qwen3-8b,product_information,3,0,product_information|not_evaluable|product_information,0,product_information
+Q038,Curam 625,B,webref-qwen3-8b,product_information,3,0,product_information|product_information|product_information,0,product_information
+Q039,Etroside,B,webref-qwen3-8b,product_information,3,0,product_information|insufficient|product_information,0,product_information
+Q040,Gramocef-O 400,B,webref-qwen3-8b,product_information,3,0,product_information|product_information|product_information,0,product_information
+Q041,Itacare,B,webref-qwen3-8b,no_page,0,0,,0,no_page
+Q042,Lamitar AM,B,webref-qwen3-8b,no_page,0,0,,0,no_page
+Q043,LARTEM,B,webref-qwen3-8b,product_information,2,0,product_information|product_information,0,product_information
+Q044,levobact-750,B,webref-qwen3-8b,product_information,3,0,product_information|product_information|product_information,0,product_information
+Q045,Lumartem,B,webref-qwen3-8b,product_information,3,0,insufficient|product_information|product_information,0,product_information
+Q046,Lumerax DT 20/120,B,webref-qwen3-8b,product_information,3,0,product_information|product_information|product_information,0,product_information
+Q047,Malafin,B,webref-qwen3-8b,warning,2,0,insufficient|warning,1,warning
+Q048,ARH-A,B,webref-qwen3-8b,product_information,1,0,product_information,0,product_information
+Q049,Metformin Denk 500,B,webref-qwen3-8b,product_information,3,0,product_information|product_information|product_information,0,product_information
+Q050,Nebilong-H,B,webref-qwen3-8b,product_information,3,0,insufficient|product_information|product_information,0,product_information
+Q051,neurocare,B,webref-qwen3-8b,product_information,2,0,product_information|product_information,0,product_information
+Q052,Nexium,B,webref-qwen3-8b,product_information,3,0,product_information|product_information|product_information,0,product_information
+Q053,Nifedi-Denk 20 Retard,B,webref-qwen3-8b,product_information,3,0,product_information|product_information|product_information,0,product_information
+Q054,ORODAR,B,webref-qwen3-8b,no_page,0,0,,0,no_page
+Q055,SPASMOMEN,B,webref-qwen3-8b,product_information,3,0,product_information|not_evaluable|product_information,0,product_information
+Q056,SULPHADAR,B,webref-qwen3-8b,no_page,0,0,,0,no_page
+Q057,TRIALGIC,B,webref-qwen3-8b,product_information,2,0,product_information|product_information,0,product_information
+Q058,UTROGESTAN,B,webref-qwen3-8b,product_information,3,0,product_information|product_information|not_evaluable,0,product_information
+Q059,VOMI-6,B,webref-qwen3-8b,insufficient,1,0,insufficient,0,insufficient
+Q060,Zoladex LA 10.8 mg,B,webref-qwen3-8b,warning,3,0,product_information|warning|product_information,0,warning
+Q061,XERIN,B,webref-qwen3-8b,no_page,0,0,,0,no_page
+Q062,Zyrtec,B,webref-qwen3-8b,no_page,0,0,,0,no_page
+Q063,Zenta,B,webref-qwen3-8b,no_page,0,0,,0,no_page
+Q064,VISCERALGINE,B,webref-qwen3-8b,product_information,3,0,product_information|product_information|product_information,0,product_information
+Q065,Streptoquin,B,webref-qwen3-8b,warning,3,0,warning|product_information|insufficient,0,warning
+Q066,SelokenZOC 100 mg,B,webref-qwen3-8b,product_information,3,0,not_evaluable|product_information|product_information,0,product_information
+Q067,Rhinopro,B,webref-qwen3-8b,product_information,2,0,product_information|not_evaluable,0,product_information
+Q068,paramol,B,webref-qwen3-8b,warning,2,0,warning|product_information,0,warning
+Q069,Neurovit,B,webref-qwen3-8b,product_information,2,0,product_information|product_information,0,product_information
+Q070,Megamox,B,webref-qwen3-8b,product_information,3,0,not_evaluable|product_information|not_evaluable,0,product_information
+Q071,JUSPRIN 81mg,B,webref-qwen3-8b,warning,3,0,product_information|product_information|warning,0,warning
+Q072,Ivypront,B,webref-qwen3-8b,product_information,3,0,product_information|product_information|product_information,0,product_information
+Q073,Gabalepsy,B,webref-qwen3-8b,product_information,3,0,product_information|product_information|product_information,0,product_information
+Q074,FLOXABACT,B,webref-qwen3-8b,product_information,3,0,product_information|product_information|product_information,0,product_information
+Q075,Flagyl,B,webref-qwen3-8b,product_information,3,0,not_evaluable|product_information|not_evaluable,0,product_information
+Q076,Diclac 75 ID,B,webref-qwen3-8b,product_information,3,0,product_information|product_information|product_information,0,product_information
+Q077,CIPROFAR 500 mg,B,webref-qwen3-8b,error,3,1,insufficient|product_information,0,error
+Q078,Ciprodiazole,B,webref-qwen3-8b,warning,3,0,not_evaluable|warning|product_information,0,warning
+Q079,CEMICRESTO,B,webref-qwen3-8b,product_information,3,0,product_information|product_information|not_evaluable,0,product_information
+Q080,Asmakast,B,webref-qwen3-8b,not_evaluable,3,0,not_evaluable|not_evaluable|not_evaluable,0,not_evaluable
+Q081,Aggrex,B,webref-qwen3-8b,product_information,3,0,insufficient|insufficient|product_information,0,product_information
+Q082,Antopral,B,webref-qwen3-8b,not_evaluable,3,0,not_evaluable|not_evaluable|not_evaluable,0,not_evaluable
+Q083,Tareg 40,B,webref-qwen3-8b,product_information,3,0,product_information|not_evaluable|not_evaluable,0,product_information
+Q084,Rheumatizen,B,webref-qwen3-8b,product_information,3,0,product_information|product_information|not_evaluable,0,product_information
+Q085,Reparil-Gel N,B,webref-qwen3-8b,product_information,3,0,product_information|product_information|product_information,0,product_information
+Q086,Prinorelax,B,webref-qwen3-8b,product_information,1,0,product_information,0,product_information
+Q087,Phenadone,B,webref-qwen3-8b,product_information,3,0,product_information|product_information|insufficient,0,product_information
+Q088,Mucophylline,B,webref-qwen3-8b,product_information,3,0,product_information|product_information|product_information,0,product_information
+Q089,Lovir,B,webref-qwen3-8b,product_information,3,0,insufficient|product_information|product_information,0,product_information
+Q090,HISTAZINE-1,B,webref-qwen3-8b,product_information,3,0,product_information|product_information|product_information,0,product_information
+Q091,GLUCOPHAGE,B,webref-qwen3-8b,product_information,3,0,product_information|product_information|product_information,0,product_information
+Q092,EZAMOL-C,B,webref-qwen3-8b,warning,3,0,product_information|warning|product_information,0,warning
+Q093,CELEBREX,B,webref-qwen3-8b,product_information,3,0,not_evaluable|product_information|product_information,0,product_information
+Q094,Cataflam,B,webref-qwen3-8b,insufficient,1,0,insufficient,0,insufficient
+Q095,Avosoya 300 mg,B,webref-qwen3-8b,product_information,3,0,product_information|product_information|product_information,1,warning
+Q096,Anuva,B,webref-qwen3-8b,product_information,3,0,product_information|product_information|not_evaluable,0,product_information
+Q097,Lamifen,B,webref-qwen3-8b,product_information,3,0,not_evaluable|not_evaluable|product_information,0,product_information
+Q098,Hemoclar Cream 0.5%,B,webref-qwen3-8b,error,3,1,not_evaluable|not_evaluable,0,error
+Q099,midodrine 2.5 mg,B,webref-qwen3-8b,product_information,3,0,not_evaluable|product_information|product_information,0,product_information
+Q100,Remowax,B,webref-qwen3-8b,product_information,3,0,not_evaluable|product_information|product_information,0,product_information
