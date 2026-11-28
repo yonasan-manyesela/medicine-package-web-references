@@ -25,6 +25,8 @@ Run every script from the repository root. The number gives the run order.
 | `scripts/3_source_context/09_evaluate_against_human_reference.py` | Agreement (κ, product-level bootstrap), identity × context tables, quotation checks | 3.7, 4 |
 | `scripts/3_source_context/10_plot_result_figures.py` | Figure of model agreement (Fig. 10) from the outputs of step 09 | 4.3 |
 | `scripts/3_source_context/quotation_review/13–15_*.py` | Builds the quotation review page, groups repeated quotations, and reconciles the two review passes | 3.7, 4.3 |
+| `scripts/3_source_context/quotation_review/16_final_quotation_support.py` | Final quotation-review table from the CH and A1 exports (grounding, support, relevance per model and signal) | 4.3 |
+| `scripts/3_source_context/quotation_review/17_plot_quotation_evidence.py` | Figure of grounding, support and relevance (Fig. 11) | 4.3 |
 | `scripts/3_source_context/context_label_rule.py` | The fixed rule that maps the nine signals to a page label; used for humans and models alike | 3.4 |
 | `scripts/3_source_context/previous_pipeline_ievc2026.py` | The pipeline of our IEVC 2026 paper (comparison row in Table 4) | 4.3, App. A |
 | `scripts/4_revision_checks/00_export_retrieval_records.py` | Exports the retrieval records (candidates, match counts, top three) into `data/1_retrieval/` | — |
@@ -85,13 +87,14 @@ Annotator codes: `Yona` and `FirstAuthor` = Annotator 1 (first author); `EI` = A
 | `data/3_source_context/attribute_consistency/panel_c_reconciled_2026-11-28.csv` | Page attributes vs query package for 100 image–page cases | 3.4, 4.2 |
 | `data/3_source_context/models/context_<A\|B>__<model>.csv` | Page-level output of each model run with quotations, grounding and status | 3.6, 4.3 |
 | `data/3_source_context/models/context_products_<A\|B>__<model>.csv`, `llm_results_cot.csv` | Product labels of each run; page labels of the previous pipeline | 4.3, App. A |
-| `data/3_source_context/quotation_review/` | Quotation review records and the summary of the final reconciliation (`FINAL_FINDINGS.md`) | 3.7, 4.3 |
+| `data/3_source_context/quotation_review/semantic_evidence_CH.csv`, `semantic_evidence_A1.csv` | The two reviewer exports (508 grouped quotations; A1 completed 101) | 3.7, 4.3 |
+| `data/3_source_context/quotation_review/semantic_group_map.csv` | Grouped quotation → original model-specific instance (572 records; 531 model instances) | 3.7 |
+| `data/3_source_context/quotation_review/` (other files) | Earlier reconciliation outputs and the written summary `FINAL_FINDINGS.md` | 4.3 |
 | `results/from_step09/` | Outputs of step 09 (agreement tables, human page labels, identity × context) | 4.2, 4.3 |
 | `results/reported_numbers.csv`, `results/figures/` | Recomputed numbers with sources; figure files | all |
 
 `gpt-4o-2024-08-06` is GPT-4o; `webref-qwen3-8b` is Qwen3 8B run locally in Ollama.
 
-**Known gap:** the support and product-relevance percentages of the quotation review (Section 4.3) come from the final six-signal reconciliation table, which is not yet in this repository; see `RESULTS_EVIDENCE.md`.
 
 ## License
 

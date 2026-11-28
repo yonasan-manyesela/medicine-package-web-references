@@ -270,11 +270,16 @@ qm = qm[qm.stratum != "human_only"]
 add("3.7", "reviewed quotation instances GPT-4o / Qwen3 8B", "/".join(str(int((qm.model == mm_).sum())) for mm_ in ("gpt-4o-2024-08-06", "webref-qwen3-8b")), "226/305", "data/3_source_context/quotation_review/expanded_model_quote_results.csv")
 add("4.3", "reviewed quotations grounded GPT-4o / Qwen3 8B (%)", "/".join(pct(qm[qm.model == mm_].located.eq("yes").sum(), (qm.model == mm_).sum()) for mm_ in ("gpt-4o-2024-08-06", "webref-qwen3-8b")), "98.7/95.7",
     "data/3_source_context/quotation_review/audit_merged_CH_with_completed_A1.csv")
-add("4.3", "grounded + supporting GPT-4o / Qwen3 8B (%)", "not reproducible from repository files", "83.2/70.2", "missing: six_signal_final.csv (see FINAL_FINDINGS.md)",
-    "the final six-signal reconciliation table is not in the repository")
-add("4.3", "grounded + supporting + product-relevant GPT-4o / Qwen3 8B (%)", "not reproducible from repository files", "81.4/68.2", "missing: six_signal_final.csv")
+qs = pd.read_csv(R / "quotation_review_final_summary.csv").set_index(["model", "signal"])
+G, W = "gpt-4o-2024-08-06", "webref-qwen3-8b"
+add("4.3", "grounded + supporting GPT-4o / Qwen3 8B (%)", f"{qs.loc[(G, 'all'), 'supported_pct']}/{qs.loc[(W, 'all'), 'supported_pct']}", "83.2/69.8",
+    "results/quotation_review_final_summary.csv", "rebuilt by scripts/3_source_context/quotation_review/16_final_quotation_support.py")
+add("4.3", "grounded + supporting + product-relevant GPT-4o / Qwen3 8B (%)", f"{qs.loc[(G, 'all'), 'relevant_pct']}/{qs.loc[(W, 'all'), 'relevant_pct']}", "81.4/68.2", "results/quotation_review_final_summary.csv")
+add("4.3", "P5 quotations supported GPT-4o / Qwen3 8B", f"{qs.loc[(G, 'P5'), 'supported']}/{qs.loc[(G, 'P5'), 'n']}, {qs.loc[(W, 'P5'), 'supported']}/{qs.loc[(W, 'P5'), 'n']}", "43/60, 45/77",
+    "results/quotation_review_final_summary.csv", "FINAL_FINDINGS.md table")
+add("4.3", "W1 quotations describing genuine warnings GPT-4o / Qwen3 8B", f"{qs.loc[(G, 'W1'), 'supported']}/{qs.loc[(G, 'W1'), 'n']}, {qs.loc[(W, 'W1'), 'supported']}/{qs.loc[(W, 'W1'), 'n']}", "6/7, 8/29",
+    "results/quotation_review_final_summary.csv")
 add("4.3", "P5 disagreement pages with a supporting model quotation", "18/53", "18/53", "data/3_source_context/quotation_review/FINAL_FINDINGS.md", "text record only")
-add("4.3", "W1 quotations describing genuine warnings GPT-4o / Qwen3 8B", "6/7, 8/29", "6/7, 8/29", "data/3_source_context/quotation_review/FINAL_FINDINGS.md", "text record only")
 
 out = pd.DataFrame(ROWS)
 out.to_csv(R / "reported_numbers.csv", index=False)

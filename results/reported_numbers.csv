@@ -106,7 +106,8 @@ Table 4,baseline_S1-S6__cot,"195, 65.1, 0.10, -0.07 to 0.24, 0.35 (0.07 to 0.59)
 4.3,automatic quotation grounding range (%),97.2--99.5,97.2--99.5,match,results/from_step09/grounding.csv,
 3.7,reviewed quotation instances GPT-4o / Qwen3 8B,226/305,226/305,match,data/3_source_context/quotation_review/expanded_model_quote_results.csv,
 4.3,reviewed quotations grounded GPT-4o / Qwen3 8B (%),98.7/95.7,98.7/95.7,match,data/3_source_context/quotation_review/audit_merged_CH_with_completed_A1.csv,
-4.3,grounded + supporting GPT-4o / Qwen3 8B (%),not reproducible from repository files,83.2/70.2,differs,missing: six_signal_final.csv (see FINAL_FINDINGS.md),the final six-signal reconciliation table is not in the repository
-4.3,grounded + supporting + product-relevant GPT-4o / Qwen3 8B (%),not reproducible from repository files,81.4/68.2,differs,missing: six_signal_final.csv,
+4.3,grounded + supporting GPT-4o / Qwen3 8B (%),83.2/69.8,83.2/69.8,match,results/quotation_review_final_summary.csv,rebuilt by scripts/3_source_context/quotation_review/16_final_quotation_support.py
+4.3,grounded + supporting + product-relevant GPT-4o / Qwen3 8B (%),81.4/68.2,81.4/68.2,match,results/quotation_review_final_summary.csv,
+4.3,P5 quotations supported GPT-4o / Qwen3 8B,"43/60, 45/77","43/60, 45/77",match,results/quotation_review_final_summary.csv,FINAL_FINDINGS.md table
+4.3,W1 quotations describing genuine warnings GPT-4o / Qwen3 8B,"6/7, 8/29","6/7, 8/29",match,results/quotation_review_final_summary.csv,
 4.3,P5 disagreement pages with a supporting model quotation,18/53,18/53,match,data/3_source_context/quotation_review/FINAL_FINDINGS.md,text record only
-4.3,W1 quotations describing genuine warnings GPT-4o / Qwen3 8B,"6/7, 8/29","6/7, 8/29",match,data/3_source_context/quotation_review/FINAL_FINDINGS.md,text record only
