@@ -288,6 +288,13 @@ add("4.3", "W1 quotations describing genuine warnings GPT-4o / Qwen3 8B", f"{qs.
     "results/quotation_review_final_summary.csv")
 add("4.3", "P5 disagreement pages with a supporting model quotation", "18/53", "18/53", "data/3_source_context/quotation_review/FINAL_FINDINGS.md", "text record only")
 
+pa = pd.read_csv(R / "prevalence_adjusted_agreement.csv").set_index("comparison")
+add("4.3", "Gwet AC1 GPT-4o SR / DR, Qwen SR / DR",
+    " / ".join(f"{pa.loc[k, 'ac1']:.2f}" for k in ("A__gpt-4o-2024-08-06", "B__gpt-4o-2024-08-06", "A__webref-qwen3-8b", "B__webref-qwen3-8b")),
+    "0.85 / 0.72 / 0.80 / 0.83", "results/prevalence_adjusted_agreement.csv", "scripts/4_revision_checks/13_*.py")
+add("4.3", "Gwet AC1 Annotator 1 vs pharmacist", f"{pa.loc['Annotator 1 vs pharmacist annotator', 'ac1']:.2f}", "0.81", "results/prevalence_adjusted_agreement.csv")
+vy = pd.read_csv(R / "verified_reference_candidate_yield.csv").iloc[0]
+add("4.2", "reference-candidate yield with image URL confirmed in saved HTML", int(vy.reference_candidates_html_verified), 27, "results/verified_reference_candidate_yield.csv")
 out = pd.DataFrame(ROWS)
 out.to_csv(R / "reported_numbers.csv", index=False)
 print(out.status.value_counts().to_string())
