@@ -1,0 +1,110 @@
+﻿# Reference image labelling - product identity annotations
+# annotator = RM
+# mode = independent second annotator (fixed subset)
+# guide_version = v7   build_id = 2bf890b296f6
+# items_in_page = 100   items_labelled = 100
+# exported_at_utc = 2026-11-03T06:50:07.959Z
+# label: same | variant | brand_only | different | unclear ; primary_label folds brand_only+unclear into cannot_determine
+# flags: packaging_differs (M) / part_of_larger_image (C) / watermark_or_overlay (W) ; 1 = set
+# NOTE labels describe which product the web image shows - not whether any package is genuine.
+annotator,item_id,query_id,brand,strength_form,product_attributes,label,primary_label,packaging_differs,part_of_larger_image,watermark_or_overlay,note,seconds,labelled_at,guide_version,build_id
+RM,Q001_302f32855bccf80f,Q001,same,same,same,same,same,0,0,0,,313,2026-11-03T06:36:37.267Z,v7,2bf890b296f6
+RM,Q002_01631ff59730e60d,Q002,same,same,same,same,same,0,0,0,,92,2026-11-03T06:36:47.185Z,v7,2bf890b296f6
+RM,Q004_7c91d6f007ea429c,Q004,different,,,different,different,0,0,0,,66,2026-11-03T06:36:54.743Z,v7,2bf890b296f6
+RM,Q004_e6e4eaa84d79bce4,Q004,same,different,different,variant,variant,0,0,0,,5,2026-11-03T06:36:59.371Z,v7,2bf890b296f6
+RM,Q004_0811a3756f98d673,Q004,same,same,same,same,same,1,0,0,,156,2026-11-03T06:37:04.515Z,v7,2bf890b296f6
+RM,Q004_5d735090cb057433,Q004,same,different,different,variant,variant,0,0,0,Tablet vs syrup ,154,2026-11-03T06:37:11.772Z,v7,2bf890b296f6
+RM,Q005_af63108c4ca60c38,Q005,same,different,different,variant,variant,0,0,0,"125mg/5ml vs 250mg,  suspension powder vs tablet or capsule ",310,2026-11-03T06:37:16.750Z,v7,2bf890b296f6
+RM,Q005_85bd6e1324e297ce,Q005,same,different,different,variant,variant,0,0,0,"125mg vs 100ml , orally vs injection ",403,2026-11-03T06:37:20.030Z,v7,2bf890b296f6
+RM,Q006_1bbb1e153d157e4f,Q006,different,,,different,different,0,0,0,,29,2026-11-03T06:37:23.307Z,v7,2bf890b296f6
+RM,Q010_53231bbe6d04c236,Q010,different,,,different,different,0,0,0,,19,2026-11-03T06:37:27.103Z,v7,2bf890b296f6
+RM,Q011_e67425bd09adba09,Q011,different,,,different,different,0,0,0,,36,2026-11-03T06:37:29.233Z,v7,2bf890b296f6
+RM,Q012_9036791a5fa944dc,Q012,different,,,different,different,0,0,0,,26,2026-11-03T06:37:31.401Z,v7,2bf890b296f6
+RM,Q015_d178874b90957d46,Q015,same,same,same,same,same,0,0,0,,90,2026-11-03T06:37:33.595Z,v7,2bf890b296f6
+RM,Q016_e2b6b5c004278f40,Q016,same,same,same,same,same,0,0,0,,117,2026-11-03T06:37:35.792Z,v7,2bf890b296f6
+RM,Q016_403087b3de25d0e2,Q016,same,same,same,same,same,1,0,1,,204,2026-11-03T06:37:38.491Z,v7,2bf890b296f6
+RM,Q018_348dc21e35b8eaa6,Q018,different,,,different,different,0,0,0,,20,2026-11-03T06:37:45.797Z,v7,2bf890b296f6
+RM,Q018_f54f2f21a93bad3a,Q018,same,different,different,variant,variant,0,0,0,Capsule vs power for suspension ,119,2026-11-03T06:37:49.093Z,v7,2bf890b296f6
+RM,Q018_af053c3c756fd277,Q018,same,same,same,same,same,0,0,0,,30,2026-11-03T06:37:51.142Z,v7,2bf890b296f6
+RM,Q020_e6aa736e30c4cacd,Q020,same,same,same,same,same,0,0,0,,128,2026-11-03T06:37:53.188Z,v7,2bf890b296f6
+RM,Q025_ba90e328a3fabd91,Q025,same,different,different,variant,variant,0,0,0,,180,2026-11-03T06:37:54.972Z,v7,2bf890b296f6
+RM,Q026_4b19389efcf573d3,Q026,same,same,same,same,same,0,0,0,,77,2026-11-03T06:37:56.653Z,v7,2bf890b296f6
+RM,Q027_ce2994eb3287c99a,Q027,same,different,different,variant,variant,0,0,0,,250,2026-11-03T06:37:58.384Z,v7,2bf890b296f6
+RM,Q029_91f1bb5601efc822,Q029,same,different,different,variant,variant,0,0,0,"Tablet vs solution, orally vs injection ",151,2026-11-03T06:38:00.003Z,v7,2bf890b296f6
+RM,Q030_f99aa9890a633157,Q030,different,,,different,different,0,0,0,,101,2026-11-03T06:38:01.762Z,v7,2bf890b296f6
+RM,Q030_1f3f48d43aa82811,Q030,same,same,same,same,same,0,0,0,,75,2026-11-03T06:38:06.639Z,v7,2bf890b296f6
+RM,Q030_129ed76508007aec,Q030,same,same,same,same,same,0,0,0,,83,2026-11-03T06:38:11.282Z,v7,2bf890b296f6
+RM,Q031_3086c2e9249dc1ff,Q031,different,,,different,different,0,0,0,,38,2026-11-03T06:38:18.192Z,v7,2bf890b296f6
+RM,Q032_ee403fdda76f7bfe,Q032,same,different,different,variant,variant,0,0,0,20/120 vs 40/240,203,2026-11-03T06:38:20.588Z,v7,2bf890b296f6
+RM,Q032_7a6f4c7605c1ce1c,Q032,different,,,different,different,0,0,0,,85,2026-11-03T06:38:22.639Z,v7,2bf890b296f6
+RM,Q033_aa8e13e8f2362a98,Q033,same,same,same,same,same,0,0,0,,83,2026-11-03T06:38:24.402Z,v7,2bf890b296f6
+RM,Q035_fefb81e767d482d7,Q035,same,different,different,variant,variant,0,0,0,"30tablet vs 98tablet , logo",193,2026-11-03T06:38:26.017Z,v7,2bf890b296f6
+RM,Q036_51228481ef46bf41,Q036,different,,,different,different,0,0,0,"100mg vs 150mg, 20tablet vs 10 tablet ,logo",412,2026-11-03T06:38:27.566Z,v7,2bf890b296f6
+RM,Q038_56454d52802f7937,Q038,different,,,different,different,0,0,0,"14tablet vs 20tablet, logo",126,2026-11-03T06:38:29.263Z,v7,2bf890b296f6
+RM,Q039_1be0e8302f23186e,Q039,same,same,same,same,same,0,0,0,,42,2026-11-03T06:38:30.878Z,v7,2bf890b296f6
+RM,Q039_4f9f067c6b5c370f,Q039,different,,,different,different,0,0,0,,18,2026-11-03T06:38:32.493Z,v7,2bf890b296f6
+RM,Q040_c30c7cc81e26425d,Q040,same,different,different,variant,variant,0,0,0,"Capsule vs  tablet,",133,2026-11-03T06:38:34.259Z,v7,2bf890b296f6
+RM,Q042_cfeeb843fb70396c,Q042,different,,,different,different,0,0,0,,27,2026-11-03T06:38:35.839Z,v7,2bf890b296f6
+RM,Q043_b53514d3ae616a0a,Q043,same,same,same,same,same,0,0,0,,33,2026-11-03T06:38:38.003Z,v7,2bf890b296f6
+RM,Q046_356614c1eef86884,Q046,different,,,different,different,0,0,0,,46,2026-11-03T06:38:39.568Z,v7,2bf890b296f6
+RM,Q047_32489b8b9c01552f,Q047,same,same,same,same,same,0,0,0,,67,2026-11-03T06:38:41.165Z,v7,2bf890b296f6
+RM,Q050_a18a67ce0a878ab9,Q050,same,different,different,variant,variant,0,0,0,,85,2026-11-03T06:38:42.697Z,v7,2bf890b296f6
+RM,Q050_6cd5055d51c494ce,Q050,same,same,same,same,same,0,0,0,,36,2026-11-03T06:38:44.612Z,v7,2bf890b296f6
+RM,Q051_e6bfd2c580ab7359,Q051,same,different,different,variant,variant,0,0,0,,194,2026-11-03T06:38:46.110Z,v7,2bf890b296f6
+RM,Q052_d7bda6f9643855f8,Q052,same,different,different,variant,variant,0,0,0,"10mg vs 40mg, oral suspension vs tablet ",112,2026-11-03T06:38:48.140Z,v7,2bf890b296f6
+RM,Q052_1105273a3873b5e9,Q052,same,same,same,same,same,0,0,0,,33,2026-11-03T06:38:49.670Z,v7,2bf890b296f6
+RM,Q053_222a030710e34115,Q053,same,same,same,same,same,0,0,0,,51,2026-11-03T06:38:51.293Z,v7,2bf890b296f6
+RM,Q055_c3b585088051d4b8,Q055,same,same,same,same,same,0,0,0,,73,2026-11-03T06:38:53.154Z,v7,2bf890b296f6
+RM,Q056_5301fce55ebfa43d,Q056,different,,,different,different,0,0,0,,234,2026-11-03T06:38:55.496Z,v7,2bf890b296f6
+RM,Q057_5c7eb95448948b19,Q057,same,same,same,same,same,0,0,0,,81,2026-11-03T06:38:57.096Z,v7,2bf890b296f6
+RM,Q058_3eda31d7f6a36d88,Q058,same,different,different,variant,variant,0,0,0,"15capsule vs 30capsule , 200mg vs 10mg",111,2026-11-03T06:38:58.778Z,v7,2bf890b296f6
+RM,Q058_e3df878f0b5efad1,Q058,same,different,different,variant,variant,0,0,0,15capsule vs 30capsule,93,2026-11-03T06:39:00.476Z,v7,2bf890b296f6
+RM,Q059_f70acce5673cb62e,Q059,different,,,different,different,0,0,0,,40,2026-11-03T06:39:02.057Z,v7,2bf890b296f6
+RM,Q060_6efb3cdd199a1c1d,Q060,same,different,different,variant,variant,0,0,0,,63,2026-11-03T06:39:03.888Z,v7,2bf890b296f6
+RM,Q061_9a352deda0217e91,Q061,different,,,different,different,0,0,0,,25,2026-11-03T06:39:08.598Z,v7,2bf890b296f6
+RM,Q063_225cefbbbe83e659,Q063,same,different,different,variant,variant,0,0,0,,41,2026-11-03T06:39:11.327Z,v7,2bf890b296f6
+RM,Q064_e38adeb661586b0e,Q064,same,same,same,same,same,0,0,0,,399,2026-11-03T06:39:16.537Z,v7,2bf890b296f6
+RM,Q064_56d9e6eb627a2c0d,Q064,same,different,different,variant,variant,0,0,0,,34,2026-11-03T06:39:18.585Z,v7,2bf890b296f6
+RM,Q065_df2a01dfedeef3fa,Q065,same,different,different,variant,variant,0,0,0,,21,2026-11-03T06:39:20.118Z,v7,2bf890b296f6
+RM,Q066_b0af76fdbe8e4c63,Q066,same,same,same,same,same,0,0,0,,183,2026-11-03T06:39:21.550Z,v7,2bf890b296f6
+RM,Q067_87bc9b6294a042ce,Q067,different,,,different,different,0,0,0,,54,2026-11-03T06:39:23.829Z,v7,2bf890b296f6
+RM,Q068_7a425eeb9325150c,Q068,different,,,different,different,0,0,0,,296,2026-11-03T06:39:25.412Z,v7,2bf890b296f6
+RM,Q068_998fb286fb39cf07,Q068,different,,,different,different,0,0,0,,216,2026-11-03T06:39:26.926Z,v7,2bf890b296f6
+RM,Q069_d5e8fc7ffc0a9299,Q069,same,different,different,variant,variant,0,0,0,,245,2026-11-03T06:39:28.374Z,v7,2bf890b296f6
+RM,Q070_a16f2234082c07c2,Q070,same,different,different,variant,variant,0,0,0,625mg vs 1g,132,2026-11-03T06:39:40.492Z,v7,2bf890b296f6
+RM,Q070_8ade92eb4994a918,Q070,same,different,different,variant,variant,0,0,0,625mg vs 1g,49,2026-11-03T06:39:45.518Z,v7,2bf890b296f6
+RM,Q070_72a9b5203837bb1b,Q070,same,different,different,variant,variant,0,1,0,625mg vs 500mg,198,2026-11-03T06:39:49.567Z,v7,2bf890b296f6
+RM,Q070_49de7fd4f05abed4,Q070,same,different,different,variant,variant,0,0,0,"625mg vs 457mg , tablet vs powder for suspension ",356,2026-11-03T06:39:51.646Z,v7,2bf890b296f6
+RM,Q071_1c244e7309b3b3d3,Q071,same,same,same,same,same,0,0,0,,176,2026-11-03T06:39:53.078Z,v7,2bf890b296f6
+RM,Q073_24902b76d9024466,Q073,same,different,different,variant,variant,0,0,0,,40,2026-11-03T06:39:54.576Z,v7,2bf890b296f6
+RM,Q074_4fa020a588a82052,Q074,different,,,different,different,0,0,0,,106,2026-11-03T06:39:56.274Z,v7,2bf890b296f6
+RM,Q075_cfbd9174ddc15446,Q075,same,different,different,variant,variant,0,0,0,,138,2026-11-03T06:39:59.137Z,v7,2bf890b296f6
+RM,Q076_7338f7ef01b44085,Q076,same,same,same,same,same,0,0,0,,144,2026-11-03T06:40:00.586Z,v7,2bf890b296f6
+RM,Q076_66495affd06747f9,Q076,different,,,different,different,0,0,0,,28,2026-11-03T06:40:01.984Z,v7,2bf890b296f6
+RM,Q077_5f07d3f8c57e8370,Q077,same,same,same,same,same,0,0,0,,495,2026-11-03T06:40:03.515Z,v7,2bf890b296f6
+RM,Q077_813a6a2873c2e4f7,Q077,same,different,different,variant,variant,0,1,0,,712,2026-11-03T06:40:05.131Z,v7,2bf890b296f6
+RM,Q078_ae026b29a648ad6f,Q078,same,same,same,same,same,0,0,0,,2776,2026-11-03T06:40:06.812Z,v7,2bf890b296f6
+RM,Q081_952f443f921cad46,Q081,different,,,different,different,0,0,0,,45,2026-11-03T06:40:08.460Z,v7,2bf890b296f6
+RM,Q081_dfa464c4731dfb0a,Q081,same,same,same,same,same,0,0,0,,33,2026-11-03T06:40:10.125Z,v7,2bf890b296f6
+RM,Q082_6d71a3d898ec9535,Q082,same,same,same,same,same,0,0,0,,80,2026-11-03T06:40:11.839Z,v7,2bf890b296f6
+RM,Q082_6ef0db093af945b9,Q082,same,same,same,same,same,1,0,0,,67,2026-11-03T06:40:13.470Z,v7,2bf890b296f6
+RM,Q082_c7d15e82c7e13c5b,Q082,different,,,different,different,0,0,0,,39,2026-11-03T06:40:15.235Z,v7,2bf890b296f6
+RM,Q084_76d1a59f98815b3b,Q084,same,same,same,same,same,1,0,0,,171,2026-11-03T06:40:16.916Z,v7,2bf890b296f6
+RM,Q088_956d6c99770e089f,Q088,different,,,different,different,0,0,0,,95,2026-11-03T06:40:18.465Z,v7,2bf890b296f6
+RM,Q088_c854549d4871f69f,Q088,different,,,different,different,0,0,0,,172,2026-11-03T06:40:19.912Z,v7,2bf890b296f6
+RM,Q089_6b938f892b382233,Q089,same,same,same,same,same,1,0,0,,115,2026-11-03T06:40:21.844Z,v7,2bf890b296f6
+RM,Q090_b61e35f5fcdc35a9,Q090,same,same,same,same,same,0,0,0,,27,2026-11-03T06:40:23.558Z,v7,2bf890b296f6
+RM,Q090_f1eb76793fc3c10c,Q090,different,,,different,different,0,0,0,,12,2026-11-03T06:40:28.666Z,v7,2bf890b296f6
+RM,Q092_b442ef988dcd5ca3,Q092,different,,,different,different,0,0,0,,54,2026-11-03T06:40:30.464Z,v7,2bf890b296f6
+RM,Q093_f0b4325f4798ba42,Q093,same,same,same,same,same,1,0,0,15capsule vs 20 capsule ,183,2026-11-03T06:40:32.215Z,v7,2bf890b296f6
+RM,Q093_782619179df95815,Q093,same,different,different,variant,variant,0,0,0,,32,2026-11-03T06:40:34.094Z,v7,2bf890b296f6
+RM,Q094_09b398a684cc89d0,Q094,different,,,different,different,0,0,0,,553,2026-11-03T06:49:29.641Z,v7,2bf890b296f6
+RM,Q095_e355110770138a20,Q095,same,same,same,same,same,0,0,0,,65,2026-11-03T06:49:34.569Z,v7,2bf890b296f6
+RM,Q095_90fb5557396d4a4e,Q095,same,different,different,variant,variant,0,0,0,,47,2026-11-03T06:49:40.960Z,v7,2bf890b296f6
+RM,Q096_f068d480971d3209,Q096,same,same,same,same,same,0,0,0,,120,2026-11-03T06:49:44.506Z,v7,2bf890b296f6
+RM,Q096_4a86e98494179795,Q096,same,same,same,same,same,0,0,0,,250,2026-11-03T06:49:46.522Z,v7,2bf890b296f6
+RM,Q098_78a54066c584bcb5,Q098,different,,,different,different,0,0,0,,52,2026-11-03T06:49:48.920Z,v7,2bf890b296f6
+RM,Q099_b937f2b3cd5a8fdd,Q099,same,same,same,same,same,0,0,0,,32,2026-11-03T06:49:52.397Z,v7,2bf890b296f6
+RM,Q099_0ff3475b3fc77b5b,Q099,different,,,different,different,0,0,0,,80,2026-11-03T06:49:54.394Z,v7,2bf890b296f6
+RM,Q099_5e77e71b80495989,Q099,same,different,different,variant,variant,0,0,0,,96,2026-11-03T06:49:59.538Z,v7,2bf890b296f6
+RM,Q099_f09ebfb48a8473af,Q099,same,different,different,variant,variant,0,0,0,,797,2026-11-03T06:50:07.957Z,v7,2bf890b296f6

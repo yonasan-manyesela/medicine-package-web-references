@@ -1,0 +1,14 @@
+query_id,image,verdict,note
+Q012,00003.jpg,same_photograph,NAFDAC alert image republished; same layout and text positions; hash distance 8
+Q076,00005.jpg,possible_same_photograph,same pose and framing; background replaced (grey -> white)
+Q015,00003.jpg,different_photograph,Erostin-20 variant (query Erostin-10)
+Q072,00001.jpg,different_photograph,different photograph and background
+Q019,00004.jpg,different_photograph,different angle and background
+Q015,00004.jpg,different_photograph,different angle
+Q044,00001.jpg,different_photograph,different angle and lighting
+Q053,00005.jpg,different_photograph,different angle
+Q072,00000.jpg,different_photograph,product shot on white; different photograph
+Q072,00006.jpg,different_photograph,different package version
+Q028,00006.jpg,different_photograph,different composition (two items)
+Q032,00000.jpg,different_photograph,different photograph
+Q073,00002.jpg,different_photograph,different pack (30 vs 20 capsules)

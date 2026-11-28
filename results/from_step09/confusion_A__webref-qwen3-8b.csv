@@ -1,0 +1,5 @@
+human,insufficient,not_evaluable,product_information,warning
+insufficient,12,1,14,3
+not_evaluable,2,0,0,0
+product_information,3,3,142,8
+warning,0,0,0,2

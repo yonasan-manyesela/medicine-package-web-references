@@ -1,0 +1,42 @@
+﻿item_id,query_id,baseline_label,baseline_m,focus,qimage,mimage
+Q004_0811a3756f98d673,Q004,same,0,Prior disagreement,../../labeling/img/query_Q004.jpg,../../labeling/img/Q004_0811a3756f98d673.jpg
+Q005_af63108c4ca60c38,Q005,variant,0,Prior disagreement,../../labeling/img/query_Q005.jpg,../../labeling/img/Q005_af63108c4ca60c38.jpg
+Q005_85bd6e1324e297ce,Q005,variant,0,Prior disagreement,../../labeling/img/query_Q005.jpg,../../labeling/img/Q005_85bd6e1324e297ce.jpg
+Q015_d178874b90957d46,Q015,same,0,Prior disagreement,../../labeling/img/query_Q015.jpg,../../labeling/img/Q015_d178874b90957d46.jpg
+Q016_e2b6b5c004278f40,Q016,same,1,Prior disagreement,../../labeling/img/query_Q016.jpg,../../labeling/img/Q016_e2b6b5c004278f40.jpg
+Q016_403087b3de25d0e2,Q016,variant,0,Comment 3 flagged + prior disagreement,../../labeling/img/query_Q016.jpg,../../labeling/img/Q016_403087b3de25d0e2.jpg
+Q025_ba90e328a3fabd91,Q025,same,0,Prior disagreement,../../labeling/img/query_Q025.jpg,../../labeling/img/Q025_ba90e328a3fabd91.jpg
+Q026_4b19389efcf573d3,Q026,unclear,1,Prior disagreement,../../labeling/img/query_Q026.jpg,../../labeling/img/Q026_4b19389efcf573d3.jpg
+Q027_ce2994eb3287c99a,Q027,variant,1,Prior disagreement,../../labeling/img/query_Q027.jpg,../../labeling/img/Q027_ce2994eb3287c99a.jpg
+Q030_f99aa9890a633157,Q030,variant,0,Prior disagreement,../../labeling/img/query_Q030.jpg,../../labeling/img/Q030_f99aa9890a633157.jpg
+Q040_c30c7cc81e26425d,Q040,variant,0,Prior disagreement,../../labeling/img/query_Q040.jpg,../../labeling/img/Q040_c30c7cc81e26425d.jpg
+Q051_e6bfd2c580ab7359,Q051,unclear,0,Prior disagreement,../../labeling/img/query_Q051.jpg,../../labeling/img/Q051_e6bfd2c580ab7359.jpg
+Q055_c3b585088051d4b8,Q055,same,1,Prior disagreement,../../labeling/img/query_Q055.jpg,../../labeling/img/Q055_c3b585088051d4b8.jpg
+Q058_3eda31d7f6a36d88,Q058,variant,0,Prior disagreement,../../labeling/img/query_Q058.jpg,../../labeling/img/Q058_3eda31d7f6a36d88.jpg
+Q063_225cefbbbe83e659,Q063,unclear,0,Prior disagreement,../../labeling/img/query_Q063.jpg,../../labeling/img/Q063_225cefbbbe83e659.jpg
+Q065_df2a01dfedeef3fa,Q065,unclear,0,Prior disagreement,../../labeling/img/query_Q065.jpg,../../labeling/img/Q065_df2a01dfedeef3fa.jpg
+Q069_d5e8fc7ffc0a9299,Q069,variant,0,Comment 3 flagged + prior disagreement,../../labeling/img/query_Q069.jpg,../../labeling/img/Q069_d5e8fc7ffc0a9299.jpg
+Q074_4fa020a588a82052,Q074,different,0,Prior disagreement,../../labeling/img/query_Q074.jpg,../../labeling/img/Q074_4fa020a588a82052.jpg
+Q075_cfbd9174ddc15446,Q075,same,0,Prior disagreement,../../labeling/img/query_Q075.jpg,../../labeling/img/Q075_cfbd9174ddc15446.jpg
+Q076_66495affd06747f9,Q076,different,0,Prior disagreement,../../labeling/img/query_Q076.jpg,../../labeling/img/Q076_66495affd06747f9.jpg
+Q077_5f07d3f8c57e8370,Q077,same,0,Prior disagreement,../../labeling/img/query_Q077.jpg,../../labeling/img/Q077_5f07d3f8c57e8370.jpg
+Q077_813a6a2873c2e4f7,Q077,unclear,0,Prior disagreement,../../labeling/img/query_Q077.jpg,../../labeling/img/Q077_813a6a2873c2e4f7.jpg
+Q084_76d1a59f98815b3b,Q084,unclear,0,Prior disagreement,../../labeling/img/query_Q084.jpg,../../labeling/img/Q084_76d1a59f98815b3b.jpg
+Q089_6b938f892b382233,Q089,variant,0,Comment 3 flagged + prior disagreement,../../labeling/img/query_Q089.jpg,../../labeling/img/Q089_6b938f892b382233.jpg
+Q092_b442ef988dcd5ca3,Q092,same,1,Prior disagreement,../../labeling/img/query_Q092.jpg,../../labeling/img/Q092_b442ef988dcd5ca3.jpg
+Q095_90fb5557396d4a4e,Q095,unclear,0,Prior disagreement,../../labeling/img/query_Q095.jpg,../../labeling/img/Q095_90fb5557396d4a4e.jpg
+Q099_b937f2b3cd5a8fdd,Q099,same,0,Prior disagreement,../../labeling/img/query_Q099.jpg,../../labeling/img/Q099_b937f2b3cd5a8fdd.jpg
+Q099_0ff3475b3fc77b5b,Q099,different,0,Prior disagreement,../../labeling/img/query_Q099.jpg,../../labeling/img/Q099_0ff3475b3fc77b5b.jpg
+Q027_9c36ffa498168713,Q027,variant,0,Comment 3 flagged,../../labeling/img/query_Q027.jpg,../../labeling/img/Q027_9c36ffa498168713.jpg
+Q068_916a59ab5a84a8ee,Q068,variant,0,Comment 3 flagged,../../labeling/img/query_Q068.jpg,../../labeling/img/Q068_916a59ab5a84a8ee.jpg
+Q038_95003c20bacf9d98,Q038,variant,0,Comment 3 flagged,../../labeling/img/query_Q038.jpg,../../labeling/img/Q038_95003c20bacf9d98.jpg
+Q034_32e311e42c3da7e7,Q034,variant,0,Comment 3 flagged,../../labeling/img/query_Q034.jpg,../../labeling/img/Q034_32e311e42c3da7e7.jpg
+Q030_7cb1035a43ba589e,Q030,variant,0,Comment 3 flagged,../../labeling/img/query_Q030.jpg,../../labeling/img/Q030_7cb1035a43ba589e.jpg
+Q004_e6e4eaa84d79bce4,Q004,variant,0,Comment 3 flagged,../../labeling/img/query_Q004.jpg,../../labeling/img/Q004_e6e4eaa84d79bce4.jpg
+Q038_4e6fceb520311122,Q038,variant,0,Comment 3 flagged,../../labeling/img/query_Q038.jpg,../../labeling/img/Q038_4e6fceb520311122.jpg
+Q035_fefb81e767d482d7,Q035,variant,0,Comment 3 flagged,../../labeling/img/query_Q035.jpg,../../labeling/img/Q035_fefb81e767d482d7.jpg
+Q001_e6fa9d79a5c5703f,Q001,variant,0,Comment 3 flagged,../../labeling/img/query_Q001.jpg,../../labeling/img/Q001_e6fa9d79a5c5703f.jpg
+Q077_98513bb1dc100313,Q077,variant,0,Comment 3 flagged,../../labeling/img/query_Q077.jpg,../../labeling/img/Q077_98513bb1dc100313.jpg
+Q025_64d3689e59bbbfc4,Q025,variant,0,Comment 3 flagged,../../labeling/img/query_Q025.jpg,../../labeling/img/Q025_64d3689e59bbbfc4.jpg
+Q038_17899d415eda9685,Q038,variant,0,Comment 3 flagged,../../labeling/img/query_Q038.jpg,../../labeling/img/Q038_17899d415eda9685.jpg
+Q091_a338b90fa35fd8ef,Q091,variant,0,Comment 3 flagged,../../labeling/img/query_Q091.jpg,../../labeling/img/Q091_a338b90fa35fd8ef.jpg

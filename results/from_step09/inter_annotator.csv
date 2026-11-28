@@ -1,0 +1,49 @@
+measure,warning_coding,stratum,n,agreement_pct,kappa,kappa_lo,kappa_hi,agreement_lo,agreement_hi,rater1_values,rater2_values,rater1_yes,rater2_yes
+label,after,all,57,82.5,0.406,0.055,0.621,73.214,91.071,product_information 47; insufficient 8; warning 2,product_information 48; not_evaluable 4; insufficient 4; warning 1,,
+R,after,all,57,93.0,,,,85.417,98.333,,,57.0,53.0
+product_named,after,all,57,82.5,0.273,-0.098,0.53,73.214,91.071,,,49.0,49.0
+ingredient,after,all,57,80.7,0.468,0.176,0.688,70.69,90.385,,,42.0,45.0
+strength,after,all,57,80.7,0.513,0.208,0.741,70.175,90.0,,,41.0,42.0
+form,after,all,57,82.5,0.438,0.04,0.685,73.333,90.909,,,47.0,45.0
+manufacturer,after,all,57,84.2,0.544,0.265,0.796,75.0,93.878,,,10.0,15.0
+W1,after,all,57,96.5,0.732,0.472,1.0,89.474,100.0,,,5.0,3.0
+W2_this,after,all,57,98.2,0.659,0.383,1.0,94.34,100.0,,,2.0,1.0
+W2_cant_tell,after,all,57,93.0,-0.027,-0.075,-0.026,81.667,100.0,,,3.0,1.0
+W3_official,after,all,57,94.7,0.549,0.313,1.0,86.885,100.0,,,5.0,2.0
+label,after,candidate,28,78.6,0.447,-0.022,0.688,66.667,91.667,product_information 20; insufficient 6; warning 2,product_information 23; insufficient 3; not_evaluable 1; warning 1,,
+R,after,candidate,28,96.4,,,,88.889,100.0,,,28.0,27.0
+product_named,after,candidate,28,78.6,0.276,-0.167,0.585,66.667,91.667,,,22.0,24.0
+ingredient,after,candidate,28,75.0,0.372,-0.114,0.665,59.259,88.889,,,19.0,22.0
+strength,after,candidate,28,75.0,0.417,-0.119,0.754,59.259,89.286,,,18.0,21.0
+form,after,candidate,28,82.1,0.435,-0.11,0.751,70.37,95.652,,,22.0,23.0
+manufacturer,after,candidate,28,78.6,0.432,0.048,0.743,66.667,91.667,,,6.0,8.0
+W1,after,candidate,28,92.9,0.711,0.44,1.0,80.0,100.0,,,5.0,3.0
+W2_this,after,candidate,28,96.4,0.65,0.365,1.0,88.889,100.0,,,2.0,1.0
+W2_cant_tell,after,candidate,28,85.7,-0.057,-0.148,-0.053,66.667,100.0,,,3.0,1.0
+W3_official,after,candidate,28,89.3,0.523,0.291,1.0,75.862,100.0,,,5.0,2.0
+label,after,random,29,86.2,0.293,-0.055,0.785,71.429,96.774,product_information 27; insufficient 2,product_information 25; not_evaluable 3; insufficient 1,,
+R,after,random,29,89.7,,,,75.862,100.0,,,29.0,26.0
+product_named,after,random,29,86.2,0.266,-0.115,0.783,71.429,96.774,,,27.0,25.0
+ingredient,after,random,29,86.2,0.58,0.121,0.904,71.429,96.667,,,23.0,23.0
+strength,after,random,29,86.2,0.626,0.222,0.91,71.429,96.774,,,23.0,21.0
+form,after,random,29,82.8,0.449,-0.049,0.813,66.667,96.429,,,25.0,22.0
+manufacturer,after,random,29,89.7,0.669,0.294,1.0,78.125,100.0,,,4.0,7.0
+W1,after,random,29,100.0,,,,100.0,100.0,,,0.0,0.0
+W2_this,after,random,29,100.0,,,,100.0,100.0,,,0.0,0.0
+W2_cant_tell,after,random,29,100.0,,,,100.0,100.0,,,0.0,0.0
+W3_official,after,random,29,100.0,,,,100.0,100.0,,,0.0,0.0
+label,before,all,57,45.6,0.093,-0.036,0.236,32.727,58.491,product_information 47; insufficient 8; warning 2,product_information 26; warning 23; not_evaluable 4; insufficient 4,,
+W1,before,all,57,57.9,0.063,-0.05,0.198,44.828,70.175,,,5.0,25.0
+W2_this,before,all,57,59.6,0.017,-0.099,0.163,45.614,73.77,,,2.0,23.0
+W2_cant_tell,before,all,57,93.0,-0.027,-0.075,-0.026,81.667,100.0,,,3.0,1.0
+W3_official,before,all,57,91.2,0.397,-0.031,0.79,82.54,98.182,,,5.0,4.0
+label,before,candidate,28,21.4,-0.01,-0.173,0.146,4.167,39.286,product_information 20; insufficient 6; warning 2,warning 18; product_information 6; insufficient 3; not_evaluable 1,,
+W1,before,candidate,28,32.1,-0.064,-0.286,0.126,16.129,48.276,,,5.0,20.0
+W2_this,before,candidate,28,35.7,-0.033,-0.223,0.138,14.815,57.692,,,2.0,18.0
+W2_cant_tell,before,candidate,28,85.7,-0.057,-0.148,-0.053,66.667,100.0,,,3.0,1.0
+W3_official,before,candidate,28,85.7,0.423,-0.052,0.881,71.875,100.0,,,5.0,3.0
+label,before,random,29,69.0,0.127,-0.081,0.44,51.852,85.185,product_information 27; insufficient 2,product_information 20; warning 5; not_evaluable 3; insufficient 1,,
+W1,before,random,29,82.8,,,,68.966,93.548,,,0.0,5.0
+W2_this,before,random,29,82.8,,,,68.966,93.548,,,0.0,5.0
+W2_cant_tell,before,random,29,100.0,,,,100.0,100.0,,,0.0,0.0
+W3_official,before,random,29,96.6,,,,90.0,100.0,,,0.0,1.0

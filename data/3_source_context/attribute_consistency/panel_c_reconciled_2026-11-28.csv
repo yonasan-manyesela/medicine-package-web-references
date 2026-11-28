@@ -1,0 +1,101 @@
+item_id,query_id,rank,new_group,outcome,ingredient,strength,form
+Q090_f1eb76793fc3c10c,Q090,2,"Same, M=0",Incomplete evidence,agree,not_stated,agree
+Q053_222a030710e34115,Q053,1,"Same, M=0",Incomplete evidence,not_stated,agree,agree
+Q027_9c36ffa498168713,Q027,1,Cannot determine,Incomplete evidence,not_stated,agree,agree
+Q072_d72aab1065baeaa7,Q072,2,Variant,Incomplete evidence,agree,not_stated,agree
+Q068_916a59ab5a84a8ee,Q068,2,Cannot determine,All three agree,agree,agree,agree
+Q038_95003c20bacf9d98,Q038,2,"Same, M=1",All three agree,agree,agree,agree
+Q083_464b3fc14a1712f2,Q083,1,"Same, M=0",All three agree,agree,agree,agree
+Q002_01631ff59730e60d,Q002,1,"Same, M=0",Incomplete evidence,not_stated,agree,agree
+Q036_09736ea9533c36ec,Q036,3,Variant,Contradiction,agree,contradict,agree
+Q072_37ed106cbb4f548a,Q072,3,"Same, M=0",All three agree,agree,agree,agree
+Q092_1a315d036c3dea9b,Q092,2,Cannot determine,Incomplete evidence,cannot_compare,not_stated,agree
+Q021_b828b4bd2744a048,Q021,3,Variant,Contradiction,agree,contradict,contradict
+Q018_af053c3c756fd277,Q018,1,"Same, M=0",All three agree,agree,agree,agree
+Q021_1460f4aca373df38,Q021,2,Variant,Contradiction,agree,contradict,agree
+Q088_34188ebc68042245,Q088,1,"Same, M=0",Incomplete evidence,not_stated,agree,agree
+Q089_6b938f892b382233,Q089,2,Cannot determine,Incomplete evidence,not_stated,agree,agree
+Q018_f54f2f21a93bad3a,Q018,2,Variant,Contradiction,agree,contradict,not_stated
+Q044_4f7070aac4437948,Q044,2,"Same, M=0",All three agree,agree,agree,agree
+Q034_32e311e42c3da7e7,Q034,3,"Same, M=1",All three agree,agree,agree,agree
+Q030_7cb1035a43ba589e,Q030,3,Variant,All three agree,agree,agree,agree
+Q004_0811a3756f98d673,Q004,2,"Same, M=1",Contradiction,not_stated,not_stated,contradict
+Q004_e6e4eaa84d79bce4,Q004,1,"Same, M=1",Incomplete evidence,not_stated,not_stated,agree
+Q027_76c401290aad971d,Q027,3,Variant,Contradiction,agree,contradict,contradict
+Q079_6dd5dcb7cda3174c,Q079,2,"Same, M=0",All three agree,agree,agree,agree
+Q005_e603d4d90516ca89,Q005,3,Variant,Contradiction,agree,contradict,contradict
+Q096_ca2a5c137335d40a,Q096,2,"Same, M=0",Incomplete evidence,agree,not_stated,agree
+Q015_d178874b90957d46,Q015,3,"Same, M=0",All three agree,agree,agree,agree
+Q040_c30c7cc81e26425d,Q040,3,Variant,Contradiction,agree,agree,contradict
+Q067_ecea703b650180f3,Q067,1,"Same, M=0",Incomplete evidence,not_stated,not_stated,agree
+Q096_4a86e98494179795,Q096,1,"Same, M=0",All three agree,agree,agree,agree
+Q044_5eef970ac2bd1f3c,Q044,1,"Same, M=0",All three agree,agree,agree,agree
+Q022_73bd8628a8b472c6,Q022,1,"Same, M=0",All three agree,agree,agree,agree
+Q038_4e6fceb520311122,Q038,3,"Same, M=1",All three agree,agree,agree,agree
+Q030_1839fbaf19ca4515,Q030,2,"Same, M=0",All three agree,agree,agree,agree
+Q052_ff8dca9e3b53ac46,Q052,2,Variant,Contradiction,agree,contradict,contradict
+Q079_ef3c1933378d4467,Q079,1,Variant,Contradiction,agree,contradict,agree
+Q058_f603539261b7b291,Q058,2,Variant,Contradiction,agree,contradict,agree
+Q035_fefb81e767d482d7,Q035,3,"Same, M=1",All three agree,agree,agree,agree
+Q052_05de067c5e80d709,Q052,1,Variant,Contradiction,agree,contradict,contradict
+Q050_6cd5055d51c494ce,Q050,2,"Same, M=0",All three agree,agree,agree,agree
+Q034_8de94c6a1aec3218,Q034,2,"Same, M=0",Incomplete evidence,cannot_compare,agree,agree
+Q100_74ab26ff5cd2df28,Q100,2,"Same, M=0",Incomplete evidence,agree,not_stated,agree
+Q065_b52c34b5095fd4fa,Q065,1,"Same, M=0",Incomplete evidence,cannot_compare,cannot_compare,agree
+Q032_e6fa9d79a5c5703f,Q032,1,"Same, M=0",All three agree,agree,agree,agree
+Q074_1a23ce9b41283e5b,Q074,1,Variant,Contradiction,agree,contradict,agree
+Q016_403087b3de25d0e2,Q016,2,Variant,All three agree,agree,agree,agree
+Q071_3cede26dbd8cc5b9,Q071,1,"Same, M=0",All three agree,agree,agree,agree
+Q095_e355110770138a20,Q095,2,"Same, M=0",All three agree,agree,agree,agree
+Q040_a37c025d44d3bece,Q040,1,Variant,Contradiction,agree,agree,contradict
+Q074_2a05c81ee9dfdb4d,Q074,3,"Same, M=0",All three agree,agree,agree,agree
+Q040_ec0c6468ef5b60a4,Q040,2,Variant,Contradiction,agree,contradict,contradict
+Q051_f511614584bcdacf,Q051,1,Variant,Contradiction,agree,not_stated,contradict
+Q027_76d55afed3868b94,Q027,2,Variant,Contradiction,agree,contradict,agree
+Q075_cfbd9174ddc15446,Q075,2,"Same, M=1",All three agree,agree,agree,agree
+Q002_72eb6052f9bd9f9f,Q002,3,Variant,Contradiction,agree,contradict,agree
+Q078_845127df28152cd8,Q078,3,"Same, M=0",Incomplete evidence,agree,not_stated,agree
+Q072_de2136f019aec62a,Q072,1,"Same, M=0",All three agree,agree,agree,agree
+Q087_eccebe6dbef2de5c,Q087,2,"Same, M=0",Incomplete evidence,cannot_compare,not_stated,agree
+Q004_5d735090cb057433,Q004,3,Variant,Contradiction,agree,not_stated,contradict
+Q058_3eda31d7f6a36d88,Q058,1,Variant,Contradiction,agree,contradict,agree
+Q088_956d6c99770e089f,Q088,3,"Same, M=0",Incomplete evidence,agree,not_stated,not_stated
+Q015_9989101d46033899,Q015,1,Variant,Contradiction,agree,contradict,agree
+Q091_04332932c38aeb5a,Q091,1,Variant,All three agree,agree,agree,agree
+Q005_af63108c4ca60c38,Q005,1,Variant,Contradiction,agree,contradict,agree
+Q069_d5e8fc7ffc0a9299,Q069,2,Cannot determine,All three agree,agree,agree,agree
+Q088_78950ea448a45b20,Q088,2,"Same, M=0",Incomplete evidence,agree,not_stated,not_stated
+Q052_d7bda6f9643855f8,Q052,3,Variant,Contradiction,agree,contradict,contradict
+Q043_b53514d3ae616a0a,Q043,1,"Same, M=0",Incomplete evidence,agree,not_stated,multiple
+Q034_346e425bc992eb54,Q034,1,"Same, M=0",All three agree,agree,agree,agree
+Q020_e6aa736e30c4cacd,Q020,1,"Same, M=0",All three agree,agree,agree,agree
+Q074_b13f8f8c8783c2ef,Q074,2,"Same, M=0",All three agree,agree,agree,agree
+Q037_91ab3ddb0fd162be,Q037,3,Variant,Contradiction,agree,contradict,agree
+Q029_d135f53a0df60881,Q029,2,"Same, M=0",Incomplete evidence,agree,multiple,multiple
+Q050_c59b24cd8a125229,Q050,1,"Same, M=0",Incomplete evidence,not_stated,not_stated,agree
+Q035_89af17b326df285d,Q035,2,"Same, M=0",Incomplete evidence,not_stated,agree,agree
+Q076_a7f0dd50737e30d8,Q076,1,"Same, M=0",All three agree,agree,agree,agree
+Q033_438c27bc30d44988,Q033,2,"Same, M=0",All three agree,agree,agree,agree
+Q032_ee403fdda76f7bfe,Q032,2,Variant,Contradiction,agree,contradict,agree
+Q007_3f2a7ba208fc4e2e,Q007,1,Variant,Contradiction,agree,contradict,agree
+Q028_84d8bf9eabc024f5,Q028,1,"Same, M=0",Incomplete evidence,not_stated,not_stated,agree
+Q069_bca9e479e1c01bb6,Q069,1,"Same, M=0",All three agree,agree,agree,agree
+Q001_e6fa9d79a5c5703f,Q001,3,Cannot determine,All three agree,agree,agree,agree
+Q087_9e5fd22f7c6dc49a,Q087,1,Variant,Incomplete evidence,cannot_compare,not_stated,not_stated
+Q007_a2a472dba71614e6,Q007,2,Variant,Contradiction,not_stated,contradict,agree
+Q091_252db1b4dff601d7,Q091,3,Variant,Contradiction,agree,contradict,agree
+Q098_78a54066c584bcb5,Q098,2,"Same, M=0",All three agree,agree,agree,agree
+Q070_a16f2234082c07c2,Q070,2,Variant,Contradiction,agree,contradict,agree
+Q007_e48bd51fa1aec11f,Q007,3,Variant,Contradiction,agree,contradict,agree
+Q077_98513bb1dc100313,Q077,1,Cannot determine,Incomplete evidence,agree,not_stated,agree
+Q053_e5aae835778fc468,Q053,2,"Same, M=0",All three agree,agree,agree,agree
+Q095_4d8facb1264233ec,Q095,1,"Same, M=0",All three agree,agree,agree,agree
+Q025_64d3689e59bbbfc4,Q025,1,"Same, M=1",Incomplete evidence,cannot_compare,agree,agree
+Q030_129ed76508007aec,Q030,1,"Same, M=0",All three agree,agree,agree,agree
+Q092_23dbcf37deef4e66,Q092,1,"Same, M=0",Incomplete evidence,cannot_compare,cannot_compare,cannot_compare
+Q037_3d49bc425cd62982,Q037,1,Variant,Contradiction,agree,contradict,agree
+Q078_f35ef42e7b152636,Q078,2,"Same, M=0",All three agree,agree,agree,agree
+Q049_51ea8e956b5eeada,Q049,1,"Same, M=0",All three agree,agree,agree,agree
+Q038_17899d415eda9685,Q038,1,"Same, M=1",Incomplete evidence,not_stated,agree,agree
+Q049_a80dfefa310b34a9,Q049,3,"Same, M=0",Incomplete evidence,not_stated,agree,agree
+Q091_a338b90fa35fd8ef,Q091,2,Cannot determine,All three agree,agree,agree,agree

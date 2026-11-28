@@ -1,0 +1,29 @@
+﻿item_id,query_id,label_main,label_second,note_main,note_second,accepted,final_label,reason,resolved_to
+Q004_0811a3756f98d673,Q004,variant,same,,logo is different,True,same,All four criteria match; manufacturer logo differs (M),second
+Q005_af63108c4ca60c38,Q005,variant,different,,,True,variant,Same printed name; strength differs (125 mg/5 mL vs 250 mg),first
+Q005_85bd6e1324e297ce,Q005,variant,different,,,False,variant,Same printed name; dosage form differs (oral vs injectable),first
+Q015_d178874b90957d46,Q015,same,unclear,,,True,same,"Printed name, ingredient, strength and dosage form match",first
+Q016_e2b6b5c004278f40,Q016,same,variant,,,True,same,Same base name (Esofag-40 / Esofag); esomeprazole 40 mg tablets match; design differs (M); watermark (W),first
+Q016_403087b3de25d0e2,Q016,variant,different,,,True,variant,Same printed name; dosage form differs (gastro-resistant tablets vs tablets),first
+Q025_ba90e328a3fabd91,Q025,variant,unclear,,,True,same,All four criteria match; pack size and language differ (M),third
+Q026_4b19389efcf573d3,Q026,same,unclear,,,True,unclear,Ingredient and strength not shown on query package; design differs (M),second
+Q027_ce2994eb3287c99a,Q027,same,variant,,,True,variant,"Same printed name, ibuprofen 400 mg; dosage form differs (sugar-coated tablets vs tablets)",second
+Q030_f99aa9890a633157,Q030,different,variant,,,True,variant,Same base name (Amlozaar / Amlozaar-H); active ingredients differ (hydrochlorothiazide 12.5 mg added),second
+Q040_c30c7cc81e26425d,Q040,different,variant,,,True,variant,Same base name; cefixime 400 mg; dosage form differs (capsules vs dispersible tablets),second
+Q051_e6bfd2c580ab7359,Q051,different,unclear,,,False,unclear,"Same base name; web ingredients, strength and form unreadable",second
+Q055_c3b585088051d4b8,Q055,same,variant,,,True,same,"Printed name, otilonium bromide 40 mg, film-coated tablets match; design differs (M)",first
+Q058_3eda31d7f6a36d88,Q058,variant,different,,,True,variant,Same printed name; strength differs (progesterone 200 mg vs 100 mg),first
+Q063_225cefbbbe83e659,Q063,variant,different,,,False,unclear,"Same printed name; web ingredient, strength and form unreadable; design differs (M); overlay (W)",third
+Q065_df2a01dfedeef3fa,Q065,same,variant,,,True,unclear,Same printed name; web package too small to read; pack count differs (M); overlay (W); part of larger image (C),third
+Q069_d5e8fc7ffc0a9299,Q069,variant,different,,,True,variant,"Same printed name, vitamins B1 + B6 + B12; dosage form differs (sugar-coated tablets vs tablets)",first
+Q074_4fa020a588a82052,Q074,different,variant,,,False,different,Printed names differ (FLOXABACT vs Metformin-EVAPHARMA XR),first
+Q075_cfbd9174ddc15446,Q075,variant,different,,,True,same,"All four criteria match; pack count, language and logo differ (M)",third
+Q076_66495affd06747f9,Q076,variant,same,,,True,different,Printed names differ (Diclac vs Diclo),third
+Q077_5f07d3f8c57e8370,Q077,variant,same,,,True,same,All four criteria match; design differs (M),second
+Q077_813a6a2873c2e4f7,Q077,variant,different,,,False,unclear,"Same printed name, ciprofloxacin 500 mg; dosage form not shown on web package; language and design differ (M)",third
+Q084_76d1a59f98815b3b,Q084,same,variant,,,True,unclear,"Same printed name, cream; ingredients and strength not shown on query package; design differs (M); overlay (W)",third
+Q089_6b938f892b382233,Q089,different,variant,,,True,variant,"Same base name, aciclovir 400 mg; dosage form differs (oral dispersible tablets vs tablets); watermark (W)",second
+Q092_b442ef988dcd5ca3,Q092,variant,different,,,True,same,"Same printed name; ingredients and strength printed on neither package, so not compared; design differs (M)",third
+Q095_90fb5557396d4a4e,Q095,variant,different,,,False,unclear,"Same printed name, 300, capsules; ingredients not shown on web package; design and logo differ (M)",third
+Q099_b937f2b3cd5a8fdd,Q099,same,different,,,True,same,All four criteria match; company text differs (M),first
+Q099_0ff3475b3fc77b5b,Q099,variant,different,,,True,different,Printed product names differ (midodrine vs Medoring-5),second

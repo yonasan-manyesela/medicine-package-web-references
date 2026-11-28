@@ -1,0 +1,15 @@
+run,signal,quotes,grounded,ungrounded,ungrounded_pct
+A__gpt-4o-2024-08-06,product_named,180,179,1,0.6
+A__gpt-4o-2024-08-06,ingredient,179,179,0,0.0
+A__gpt-4o-2024-08-06,strength,160,159,1,0.6
+A__gpt-4o-2024-08-06,form,160,160,0,0.0
+A__gpt-4o-2024-08-06,manufacturer,60,58,2,3.3
+A__gpt-4o-2024-08-06,warning,7,7,0,0.0
+A__webref-qwen3-8b,product_named,192,191,1,0.5
+A__webref-qwen3-8b,ingredient,186,181,5,2.7
+A__webref-qwen3-8b,strength,181,175,6,3.3
+A__webref-qwen3-8b,form,186,185,1,0.5
+A__webref-qwen3-8b,manufacturer,77,69,8,10.4
+A__webref-qwen3-8b,warning,29,29,0,0.0
+B__gpt-4o-2024-08-06,evidence (all roles),537,531,6,1.1
+B__webref-qwen3-8b,evidence (all roles),681,662,19,2.8

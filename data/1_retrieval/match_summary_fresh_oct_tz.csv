@@ -1,0 +1,101 @@
+query_id,drug,query_used,status,n_images,n_errors,best_inliers,n_valid_images,n_valid_pages,has_match,min_inliers
+Q001,Artefan 20/120,Artefan 20/120,ok,10,0,868,7,7,True,50
+Q002,D-Artepp,D-Artepp,ok,8,0,269,2,2,True,50
+Q003,ARTEQUICK,ARTEQUICK,no_match,4,0,35,0,0,False,50
+Q004,Becoactin,Becoactin,ok,10,0,1001,5,5,True,50
+Q005,Clamoxyl,Clamoxyl,ok,10,0,194,3,3,True,50
+Q006,CO-MALATHER,CO-MALATHER,no_match,10,0,26,0,0,False,50
+Q007,Cipronat,Cipronat,ok,10,0,155,4,4,True,50
+Q008,DUO-COTECXIN,DUO-COTECXIN,ok,10,0,689,3,3,True,50
+Q009,EKELFIN,EKELFIN,no_match,3,0,38,0,0,False,50
+Q010,Laefin,Laefin,no_match,5,0,27,0,0,False,50
+Q011,ARTEMETRIN DS,ARTEMETRIN DS,ok,5,0,409,4,3,True,50
+Q012,CLAXITODIN,CLAXITODIN,ok,7,0,978,3,3,True,50
+Q013,Ciprofit 500,Ciprofit 500,ok,6,0,304,5,5,True,50
+Q014,EXTOCIN Injection,EXTOCIN Injection,ok,10,0,119,5,5,True,50
+Q015,Erostin-10,Erostin-10,ok,10,0,1176,8,8,True,50
+Q016,Esofag-40,Esofag-40,ok,10,0,654,7,6,True,50
+Q017,Healmoxy Capsules 500 mg,Healmoxy Capsules 500 mg,ok,10,0,440,6,6,True,50
+Q018,Moxacil 250,Moxacil 250,ok,10,0,337,3,3,True,50
+Q019,OZEMPIC 1 mg,OZEMPIC 1 mg,ok,10,0,1038,8,7,True,50
+Q020,Cetal sinus,Cetal sinus,ok,10,0,570,7,6,True,50
+Q021,adol,adol,ok,10,0,383,8,8,True,50
+Q022,ACRETIN 0.05%,ACRETIN 0.05%,ok,10,0,610,5,5,True,50
+Q023,Augmentin 1 g,Augmentin 1 g,ok,8,0,242,7,6,True,50
+Q024,Benogen,Benogen,no_match,6,0,32,0,0,False,50
+Q025,daflon 500 mg,daflon 500 mg,ok,5,0,195,2,2,True,50
+Q026,Dentinox,Dentinox,ok,10,0,608,3,3,True,50
+Q027,Brufen,Brufen,ok,10,0,368,7,7,True,50
+Q028,Bivatracin,Bivatracin,ok,10,0,837,9,9,True,50
+Q029,AMRIZOLE 500 mg,AMRIZOLE 500 mg,ok,10,0,402,8,7,True,50
+Q030,Amlozaar,Amlozaar,ok,10,0,820,6,6,True,50
+Q031,ARH-L,ARH-L,no_match,10,0,37,0,0,False,50
+Q032,Artefan Dispersible,Artefan Dispersible,ok,7,0,956,6,5,True,50
+Q033,Artequin 600/750,Artequin 600/750,ok,10,0,815,5,5,True,50
+Q034,Ascard-75,Ascard-75,ok,10,0,882,9,9,True,50
+Q035,Aspirin cardio,Aspirin cardio,ok,10,0,729,7,6,True,50
+Q036,Bi-Profenid LP,Bi-Profenid LP,ok,10,0,527,7,7,True,50
+Q037,Crestor,Crestor,ok,10,0,379,7,7,True,50
+Q038,Curam 625,Curam 625,ok,10,0,601,7,7,True,50
+Q039,Etroside,Etroside,ok,8,0,608,3,3,True,50
+Q040,Gramocef-O 400,Gramocef-O 400,ok,10,0,675,7,5,True,50
+Q041,Itacare,Itacare,no_match,10,0,27,0,0,False,50
+Q042,Lamitar AM,Lamitar AM,no_match,5,0,19,0,0,False,50
+Q043,LARTEM,LARTEM,ok,10,0,678,2,2,True,50
+Q044,levobact-750,levobact-750,ok,10,0,937,8,8,True,50
+Q045,Lumartem,Lumartem,ok,10,0,564,6,5,True,50
+Q046,Lumerax DT 20/120,Lumerax DT 20/120,ok,10,0,163,8,4,True,50
+Q047,Malafin,Malafin,no_match,10,0,28,0,0,False,50
+Q048,ARH-A,ARH-A,ok,3,0,209,1,1,True,50
+Q049,Metformin Denk 500,Metformin Denk 500,ok,10,0,546,7,7,True,50
+Q050,Nebilong-H,Nebilong-H,ok,10,0,309,6,5,True,50
+Q051,neurocare,neurocare,ok,10,0,53,1,1,True,50
+Q052,Nexium,Nexium,ok,5,0,651,3,3,True,50
+Q053,Nifedi-Denk 20 Retard,Nifedi-Denk 20 Retard,ok,6,0,1041,4,4,True,50
+Q054,ORODAR,ORODAR,ok,4,0,65,1,1,True,50
+Q055,SPASMOMEN,SPASMOMEN,ok,10,0,472,10,8,True,50
+Q056,SULPHADAR,SULPHADAR,no_match,3,0,18,0,0,False,50
+Q057,TRIALGIC,TRIALGIC,no_match,10,0,25,0,0,False,50
+Q058,UTROGESTAN,UTROGESTAN,ok,8,0,330,5,5,True,50
+Q059,VOMI-6,VOMI-6,ok,10,0,174,4,4,True,50
+Q060,Zoladex LA 10.8 mg,Zoladex LA 10.8 mg,ok,10,0,748,9,9,True,50
+Q061,XERIN,XERIN,no_match,10,0,21,0,0,False,50
+Q062,Zyrtec,Zyrtec,ok,10,0,118,3,3,True,50
+Q063,Zenta,Zenta,no_match,10,0,22,0,0,False,50
+Q064,VISCERALGINE,VISCERALGINE,ok,10,0,531,10,10,True,50
+Q065,Streptoquin,Streptoquin,ok,9,1,418,5,5,True,50
+Q066,SelokenZOC 100 mg,SelokenZOC 100 mg,ok,10,0,810,6,5,True,50
+Q067,Rhinopro,Rhinopro,ok,10,0,664,3,3,True,50
+Q068,paramol,paramol,ok,8,0,870,2,2,True,50
+Q069,Neurovit,Neurovit,ok,10,0,191,3,3,True,50
+Q070,Megamox,Megamox,ok,10,0,308,6,5,True,50
+Q071,JUSPRIN 81mg,JUSPRIN 81mg,ok,10,0,96,1,1,True,50
+Q072,Ivypront,Ivypront,ok,10,0,791,2,2,True,50
+Q073,Gabalepsy,Gabalepsy,ok,5,0,936,3,3,True,50
+Q074,FLOXABACT,FLOXABACT,ok,9,0,504,6,6,True,50
+Q075,Flagyl,Flagyl,ok,10,0,280,8,8,True,50
+Q076,Diclac 75 ID,Diclac 75 ID,ok,10,0,434,8,8,True,50
+Q077,CIPROFAR 500 mg,CIPROFAR 500 mg,ok,10,0,223,6,5,True,50
+Q078,Ciprodiazole,Ciprodiazole,ok,10,0,929,10,10,True,50
+Q079,CEMICRESTO,CEMICRESTO,ok,10,0,467,6,5,True,50
+Q080,Asmakast,Asmakast,ok,10,0,627,7,7,True,50
+Q081,Aggrex,Aggrex,ok,10,0,455,4,3,True,50
+Q082,Antopral,Antopral,ok,10,0,554,8,7,True,50
+Q083,Tareg 40,Tareg 40,ok,10,0,547,5,4,True,50
+Q084,Rheumatizen,Rheumatizen,ok,10,0,666,6,6,True,50
+Q085,Reparil-Gel N,Reparil-Gel N,ok,10,0,732,9,9,True,50
+Q086,Prinorelax,Prinorelax,ok,2,0,138,1,1,True,50
+Q087,Phenadone,Phenadone,ok,10,1,606,6,6,True,50
+Q088,Mucophylline,Mucophylline,ok,10,0,711,6,6,True,50
+Q089,Lovir,Lovir,ok,10,0,301,3,3,True,50
+Q090,HISTAZINE-1,HISTAZINE-1,ok,10,0,566,6,6,True,50
+Q091,GLUCOPHAGE,GLUCOPHAGE,ok,10,0,418,10,10,True,50
+Q092,EZAMOL-C,EZAMOL-C,ok,10,0,548,6,6,True,50
+Q093,CELEBREX,CELEBREX,ok,10,0,167,5,5,True,50
+Q094,Cataflam,Cataflam,ok,10,0,724,7,7,True,50
+Q095,Avosoya 300 mg,Avosoya 300 mg,ok,10,0,630,5,5,True,50
+Q096,Anuva,Anuva,ok,10,0,765,4,4,True,50
+Q097,Lamifen,Lamifen,ok,10,0,558,3,3,True,50
+Q098,Hemoclar Cream 0.5%,Hemoclar Cream 0.5%,ok,10,0,887,5,5,True,50
+Q099,midodrine 2.5 mg,midodrine 2.5 mg,ok,10,0,100,2,2,True,50
+Q100,Remowax,Remowax,ok,10,0,404,6,6,True,50

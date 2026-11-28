@@ -1,0 +1,13 @@
+run,signal,human_highlights_located,highlights_covered,highlight_coverage_pct,human_highlights_not_located,model_quotes_located,quotes_on_human_evidence,quote_support_pct,model_quotes_more_than_once,pages_both_quoted,pages_same_value,same_value_pct
+A__gpt-4o-2024-08-06,product_named,123,31,25.2,44,154,31,20.1,25,162,156,96.3
+A__gpt-4o-2024-08-06,ingredient,112,76,67.9,33,152,79,52.0,27,114,107,93.9
+A__gpt-4o-2024-08-06,strength,125,39,31.2,25,126,42,33.3,33,116,105,90.5
+A__gpt-4o-2024-08-06,form,138,30,21.7,34,131,30,22.9,29,131,119,90.8
+A__gpt-4o-2024-08-06,manufacturer,28,26,92.9,2,55,26,47.3,5,29,28,96.6
+A__gpt-4o-2024-08-06,warning,5,2,40.0,2,6,2,33.3,1,5,2,40.0
+A__webref-qwen3-8b,product_named,122,23,18.9,41,151,23,15.2,36,159,154,96.9
+A__webref-qwen3-8b,ingredient,110,69,62.7,33,147,65,44.2,35,114,101,88.6
+A__webref-qwen3-8b,strength,122,36,29.5,24,114,39,34.2,62,115,104,90.4
+A__webref-qwen3-8b,form,136,38,27.9,32,109,36,33.0,76,147,132,89.8
+A__webref-qwen3-8b,manufacturer,26,25,96.2,2,65,25,38.5,10,28,27,96.4
+A__webref-qwen3-8b,warning,5,1,20.0,2,25,1,4.0,4,5,1,20.0

@@ -1,0 +1,6 @@
+run,not_evaluable,insufficient
+A__gpt-4o-2024-08-06,33.0,
+A__webref-qwen3-8b,9.0,24.0
+B__gpt-4o-2024-08-06,33.0,
+B__webref-qwen3-8b,23.0,10.0
+baseline_S1-S6__cot,,33.0

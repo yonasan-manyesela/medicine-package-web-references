@@ -1,0 +1,5 @@
+run_1,run_2,pages_common,kappa_diff,diff_lo,diff_hi
+A__gpt-4o-2024-08-06,B__gpt-4o-2024-08-06,194,0.142,-0.025,0.282
+A__webref-qwen3-8b,B__webref-qwen3-8b,188,-0.062,-0.157,0.024
+A__gpt-4o-2024-08-06,A__webref-qwen3-8b,190,0.091,-0.092,0.272
+B__gpt-4o-2024-08-06,B__webref-qwen3-8b,192,-0.091,-0.247,0.08
