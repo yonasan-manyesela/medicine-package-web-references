@@ -31,7 +31,7 @@ Run every script from the repository root. The number gives the run order.
 | `scripts/3_source_context/previous_pipeline_ievc2026.py` | The pipeline of our IEVC 2026 paper (comparison row in Table 4) | 4.3, App. A |
 | `scripts/4_revision_checks/00_export_retrieval_records.py` | Exports the retrieval records (candidates, match counts, top three) into `data/1_retrieval/` | — |
 | `scripts/4_revision_checks/01_check_query_photo_duplicates.py` | Compares every downloaded candidate with its query photograph (hash, thumbnail correlation, matches) | 3.2, 4.1 |
-| `scripts/4_revision_checks/02_match_count_roc_and_cutoffs.py` | Precision-recall of the match count and product coverage by threshold (Fig. 6) | 4.1 |
+| `scripts/4_revision_checks/02_match_count_roc_and_cutoffs.py` | ROC AUC of the match count and the threshold table (Table 4 in the revision); also draws a supplementary figure | 4.1 |
 | `scripts/4_revision_checks/03_compare_query_runs.py` | Paired comparison of two searches (name vs name + form; US vs Tanzania region), exact McNemar | 4.1, 5.5 |
 | `scripts/4_revision_checks/04_relabel_Q092_2026-11-28.py` | Consistency correction of one identity label (dated copies; originals kept) | 3.3 |
 | `scripts/4_revision_checks/05_plot_figure7_identity_by_rank.py`, `06_plot_figure8_identity_and_source_context.py` | Figures 7 and 8 from the final labels | 4.1, 4.2 |

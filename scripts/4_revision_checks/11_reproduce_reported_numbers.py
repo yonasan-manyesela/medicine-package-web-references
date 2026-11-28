@@ -160,6 +160,10 @@ for c, p_paper, s_paper, y_paper in ((50, "48.0", 64, 35), (200, "62.1", 62, 35)
 add("4.1", "share of same-medicine images kept at 200 matches", f"{100 * (pos >= 200).mean():.0f}", "92", "same")
 for c, paper in ((300, 55), (400, 51)):
     add("4.1", f"cutoff {c}: Success@3", int(img[img.m >= c].groupby("query_id").same.any().sum()), paper, SRC)
+for c, n_, p_, s_, y_ in ((100, 220, "53.2", 63, 35), (300, 151, "68.2", 55, 32), (400, 114, "76.3", 51, 28), (50, 246, "48.0", 64, 35), (200, 177, "62.1", 62, 35)):
+    x = img[img.m >= c]; gg = x.groupby("query_id")
+    add("Table threshold", f"{c} matches: images kept / same-medicine share / Success@3 / yield",
+        f"{len(x)} / {pct(x.same.sum(), len(x))} / {int(gg.same.any().sum())} / {int(gg.ref.any().sum())}", f"{n_} / {p_} / {s_} / {y_}", SRC)
 pos_ = imgd.image.str.extract(r"(\d+)")[0].astype(int) + 1
 add("4.1", "retained images from download positions 4-10", int((pos_ >= 4).sum()), 130, "data/1_retrieval/top3_fresh_oct.csv")
 first = imgd.assign(p=pos_)[imgd.same].groupby("query_id").p.min()
