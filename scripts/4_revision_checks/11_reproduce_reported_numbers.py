@@ -157,6 +157,9 @@ for c, p_paper, s_paper, y_paper in ((50, "48.0", 64, 35), (200, "62.1", 62, 35)
     add("4.1", f"cutoff {c}: same-medicine share of retained images", pct(x.same.sum(), len(x)), p_paper, SRC)
     add("4.1", f"cutoff {c}: Success@3", int(gg.same.any().sum()), s_paper, SRC)
     add("4.1", f"cutoff {c}: reference-candidate yield", int(gg.ref.any().sum()), y_paper, SRC)
+add("4.1", "share of same-medicine images kept at 200 matches", f"{100 * (pos >= 200).mean():.0f}", "92", "same")
+for c, paper in ((300, 55), (400, 51)):
+    add("4.1", f"cutoff {c}: Success@3", int(img[img.m >= c].groupby("query_id").same.any().sum()), paper, SRC)
 pos_ = imgd.image.str.extract(r"(\d+)")[0].astype(int) + 1
 add("4.1", "retained images from download positions 4-10", int((pos_ >= 4).sum()), 130, "data/1_retrieval/top3_fresh_oct.csv")
 first = imgd.assign(p=pos_)[imgd.same].groupby("query_id").p.min()

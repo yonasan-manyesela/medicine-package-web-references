@@ -94,60 +94,62 @@ def main():
     sens.round(1).to_csv(RUN / "tables" / "threshold_sensitivity_revised_identity.csv", index=False)
     assert sens.iloc[0][["success3_same", "success3_same_m0", "reference_candidates"]].tolist() == [64, 48, 35]
 
-    # ---- figure: (a) ROC; (b) precision of the retained images; (c) products covered, all against the cutoff
+    # ---- precision-recall of the match count (image level, annotated name-only images)
+    #  precision(t) = same-medicine share of annotated images with >= t matches
+    #  recall(t)    = share of the annotated same-medicine images that have >= t matches
+    #  Exact for t >= 50 (all top-three images are annotated); 20-49 rests on the annotated near-threshold sample.
+    pr = []
+    for t in sorted(d.matches.unique()):
+        if t < 20:
+            continue
+        k_ = d.matches >= t
+        pr.append({"threshold": t, "retained": int(k_.sum()), "precision": d.loc[k_, "same"].mean(),
+                   "recall": (d.same & k_).sum() / d.same.sum()})
+    pr = pd.DataFrame(pr)
+    pr_s = pr.sort_values("recall")
+    ap = float(((pr_s.recall.diff().fillna(pr_s.recall.iloc[0])) * pr_s.precision).sum())
+    pr.round(4).to_csv(EV / "match_count_precision_recall.csv", index=False)
+
+    # ---- figure: (a) precision-recall of the match count, thresholds marked; (b) products covered against the threshold
     MUTED = "#52514e"
-    fig, (a, b, c) = plt.subplots(1, 3, figsize=(7.4, 2.6), gridspec_kw={"wspace": 0.38})
-    a.plot([0, 1], [0, 1], color="#c9c8c3", lw=0.7, ls="--")
-    AUCS = {}
-    for k, col, short in (("same", GREEN, "Same medicine"), ("same_m0", NAVY, "Same, no packaging diff.")):
-        fpr, tpr, auc, name = curves[k]
-        a.plot(fpr, tpr, color=col, lw=1.6, drawstyle="steps-post")
-        AUCS[k] = auc
-    r50 = next(o for o in out if o["outcome"] == "Same medicine" and o["cutoff"] == 50)
-    r200 = next(o for o in out if o["outcome"] == "Same medicine" and o["cutoff"] == 200)
-    for r_, txt, dx, dy in ((r50, "50", 0.0, -0.11), (r200, "200", 0.03, -0.11)):
-        a.plot(r_["fpr"], r_["tpr"], "o", ms=5.5, color=GREEN, mec="white", mew=1.2, zorder=3)
-        a.annotate(txt, (r_["fpr"], r_["tpr"]), xytext=(r_["fpr"] + dx, r_["tpr"] + dy), fontsize=7.5, color=MUTED, ha="center",
-                   arrowprops=dict(arrowstyle="-", color=MUTED, lw=0.6))
-    a.set_xlim(-0.01, 1); a.set_ylim(0, 1.02); a.set_aspect("equal")
-    a.set_xticks([0, 0.5, 1]); a.set_yticks([0, 0.5, 1]); a.tick_params(labelsize=7.5)
-    a.set_xlabel("False-positive rate"); a.set_ylabel("True-positive rate")
-    a.text(0.97, 0.30, "Same medicine\n" + f"AUC {AUCS['same']:.2f}", color=GREEN, fontsize=7.2, ha="right", va="bottom", transform=a.transAxes)
-    a.text(0.97, 0.06, "Same, no packaging\n" + f"difference, AUC {AUCS['same_m0']:.2f}", color=NAVY, fontsize=7.2, ha="right", va="bottom", transform=a.transAxes)
-    a.set_title("(a) ROC of match count", loc="left", fontsize=8.5)
+    fig, (a, b) = plt.subplots(1, 2, figsize=(7.2, 2.9), gridspec_kw={"wspace": 0.32, "width_ratios": [1, 1.15]})
+    pv = pr[pr.retained >= 20]                   # drop the far tail where fewer than 20 images remain
+    a.plot(pv.recall, pv.precision, color=GREEN, lw=1.8, drawstyle="steps-post")
+    base = d.same.mean()
+    a.axhline(base, color="#c9c8c3", lw=0.7, ls="--")
+    a.text(0.02, base - 0.03, f"no threshold: all annotated images ({100 * base:.0f}%)", fontsize=6.8, color=MUTED, va="top")
+    a.text(0.03, 0.97, "Labels: minimum number of matches", fontsize=6.8, color=MUTED, va="top", transform=a.transAxes)
+    for t, lab, pos in ((50, "50 (used)", (0.86, 0.40)), (100, "100", (0.86, 0.49)), (200, "200", (0.82, 0.58)), (400, "400", (0.63, 0.69))):
+        r_ = pr[pr.threshold >= t].iloc[0]
+        a.plot(r_.recall, r_.precision, "o", ms=5.5, color=GREEN, mec="white", mew=1.2, zorder=3)
+        a.annotate(lab, (r_.recall, r_.precision), xytext=pos, fontsize=7.2, color=INK, ha="right", va="center",
+                   arrowprops=dict(arrowstyle="-", color=MUTED, lw=0.5, shrinkA=1, shrinkB=3))
+    a.set_xlim(0, 1.02); a.set_ylim(0, 1.02)
+    a.set_xticks([0, 0.25, 0.5, 0.75, 1]); a.set_xticklabels(["0", "25", "50", "75", "100"])
+    a.set_yticks([0, 0.25, 0.5, 0.75, 1]); a.set_yticklabels(["0", "25", "50", "75", "100"])
+    a.set_xlabel("Recall: same-medicine images kept (%)"); a.set_ylabel("Precision: same medicine\namong kept images (%)")
+    a.grid(color="#eeeeea", lw=0.6); a.set_axisbelow(True); a.tick_params(labelsize=7.5)
+    a.set_title("(a) Images kept by the match count", loc="left", fontsize=8.5)
 
     XMAX = 500                                   # few images remain above this; the curve gets noisy
     sv = sens[sens.cutoff <= XMAX].set_index("cutoff")
-    ticks = [50, 200, 300, 400, 500]
-
-    def marks(ax, ser, fmt, color, dy):
-        """Dots and values at the cutoff used (50) and at 200."""
+    b.axvline(50, color=MUTED, lw=0.7, ls=":")
+    b.text(56, 97, "threshold used", fontsize=6.8, color=MUTED, va="top")
+    b.plot(sv.index, sv.success3_same, color=NAVY, lw=1.8)
+    b.plot(sv.index, sv.reference_candidates, color=GREY, lw=1.8)
+    for ser, color, dy in ((sv.success3_same, NAVY, 5), (sv.reference_candidates, GREY, -5)):
         for x_ in (50, 200):
             y_ = float(ser.loc[x_])
-            ax.plot(x_, y_, "o", ms=5, color=color, mec="white", mew=1.0, zorder=3)
-            ax.text(x_ + 8, y_ + dy, fmt(y_), fontsize=7.3, color=INK, va="center")
-
-    for ax in (b, c):
-        ax.axvline(50, color=MUTED, lw=0.7, ls=":")
-        ax.set_xlim(40, XMAX); ax.set_xticks(ticks)
-        ax.set_xlabel("Minimum number of matches")
-        ax.grid(axis="y", color="#e6e5e1", lw=0.6); ax.set_axisbelow(True)
-        ax.tick_params(labelsize=7.5)
-
-    b.plot(sv.index, sv.precision_same_pct, color=GREEN, lw=1.8)
-    marks(b, sv.precision_same_pct, lambda v: f"{v:.0f}%", GREEN, -5)
-    b.set_ylim(0, 100); b.set_ylabel("Same medicine (%)")
-    b.text(56, 97, "threshold\nused", fontsize=6.8, color=MUTED, va="top")
-    b.set_title("(b) Share of retained images", loc="left", fontsize=8.5)
-
-    c.plot(sv.index, sv.success3_same, color=NAVY, lw=1.8)
-    c.plot(sv.index, sv.reference_candidates, color=GREY, lw=1.8)
-    marks(c, sv.success3_same, lambda v: f"{v:.0f}", NAVY, 5)
-    marks(c, sv.reference_candidates, lambda v: f"{v:.0f}", GREY, -5)
-    c.text(XMAX, 76, "with a same-medicine\nimage (Success@3)", fontsize=6.8, color=NAVY, ha="right", va="bottom")
-    c.text(XMAX, 16, "with a reference\ncandidate", fontsize=6.8, color=GREY, ha="right", va="top")
-    c.set_ylim(0, 100); c.set_ylabel("Products (of 100)")
-    c.set_title("(c) Products covered", loc="left", fontsize=8.5)
+            b.plot(x_, y_, "o", ms=5, color=color, mec="white", mew=1.0, zorder=3)
+            b.text(x_ + 8, y_ + dy, f"{y_:.0f}", fontsize=7.3, color=INK, va="center")
+    b.text(XMAX, 76, "with a same-medicine\nimage (Success@3)", fontsize=6.8, color=NAVY, ha="right", va="bottom")
+    b.text(XMAX, 16, "with a reference\ncandidate", fontsize=6.8, color=GREY, ha="right", va="top")
+    b.set_xlim(40, XMAX); b.set_xticks([50, 200, 300, 400, 500]); b.set_ylim(0, 100)
+    b.set_xlabel("Minimum number of matches"); b.set_ylabel("Products (of 100)")
+    b.grid(axis="y", color="#e6e5e1", lw=0.6); b.set_axisbelow(True); b.tick_params(labelsize=7.5)
+    b.set_title("(b) Products: coverage vs threshold", loc="left", fontsize=8.5)
+    print(f"average precision (t >= 20): {ap:.3f}")
+    print(pr[pr.threshold.isin([pr[pr.threshold >= t].threshold.iloc[0] for t in (20, 25, 50, 100, 200, 400)])].round(3).to_string(index=False))
     for ext in ("pdf", "png"):
         fig.savefig(EV / f"fig4_match_count_roc.{ext}", dpi=600, bbox_inches="tight", pad_inches=0.05)
     print(pd.DataFrame(out).to_string(index=False)); print(pd.read_csv(EV / "reranking_download_order.csv").T.to_string())
